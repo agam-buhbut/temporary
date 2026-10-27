@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/workout_exercise_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/digit_compose_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <TextView android:id="@id/edit_minutes_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__minutes_short" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_minutes" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="11" android:inputType="number" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/distance_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/edit_distance_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__distance" android:maxLines="1" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+                <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_distance" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="11" android:inputType="numberDecimal" style="@style/AppTheme.TightEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <TextView android:id="@id/edit_seconds_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__seconds_short" android:maxLines="1" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_seconds" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="11" android:inputType="number" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/kcal_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:id="@id/edit_kcal_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__kcal" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+                <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_kcal" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="11" android:inputType="number" android:imeOptions="actionDone" style="@style/AppTheme.TightEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5">
+        <TextView android:ellipsize="end" android:id="@id/edit_notes_caption" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__notes" android:maxLines="1" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" android:id="@id/edit_notes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:imeOptions="flagNoExtractUi" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <ImageButton android:id="@id/more_button" android:contentDescription="@string/accessibility_label__more_button" style="@style/AppTheme.WorkoutSetMoreButton" />
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Legs</string>
+    <string comment="" name="routine__pull_routine">Pull</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Full Body</string>
+    <string comment="" name="routine__push_routine">Push</string>
+    <string comment="" name="exercise__chrunches">Crunches</string>
+    <string comment="" name="exercise__leg_raises">Leg Raises</string>
+    <string comment="" name="exercise__triceps_extensions">Triceps Extensions</string>
+    <string comment="" name="exercise__pushdowns">Pushdowns</string>
+    <string comment="" name="exercise__close_grip_bench">Close Grip Bench Press</string>
+    <string comment="" name="exercise__dips">Dips</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Barbell Bicep Curl</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Dumbbell Bicep Curl</string>
+    <string comment="" name="exercise__hammercurl">Hammer Curl</string>
+    <string comment="" name="exercise__concentration_curl">Concentration Curl</string>
+    <string comment="" name="exercise__leg_press">Leg Press</string>
+    <string comment="" name="exercise__squat">Squat</string>
+    <string comment="" name="exercise__lunges">Lunges</string>
+    <string comment="" name="exercise__front_squat">Front Squat</string>
+    <string comment="" name="exercise__calf_raises">Calf Raises</string>
+    <string comment="" name="exercise__seated_calf_raises">Seated Calf Raises</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Straight Leg Deadlifts</string>
+    <string comment="" name="exercise__leg_curls">Leg Curls</string>
+    <string comment="" name="exercise__leg_extensions">Leg Extensions</string>
+    <string comment="" name="exercise__deadlift">Deadlift</string>
+    <string comment="" name="exercise__chin_up">Chin Up</string>
+    <string comment="" name="exercise__pull_up">Pull Up</string>
+    <string comment="" name="exercise__cable_row">Cable Row</string>
+    <string comment="" name="exercise__dumbbell_row">Dumbbell Row</string>
+    <string comment="" name="exercise__barbell_row">Barbell Row</string>
+    <string comment="" name="exercise__pulldowns">Pulldowns</string>
+    <string comment="" name="exercise__hyperextensions">Hyperextensions</string>
+    <string comment="" name="exercise__bench_press">Bench Press</string>
+    <string comment="" name="exercise__incline_bench_press">Incline Bench Press</string>
+    <string comment="" name="exercise__dumbbell_press">Dumbbell Press</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Incline Dumbbell Press</string>
+    <string comment="" name="exercise__dumbbell_flies">Dumbbell flies</string>
+    <string comment="" name="exercise__cable_crossovers">Cable Crossovers</string>
+    <string comment="" name="exercise__military_press">Military Press</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Dumbbell Lateral Raises</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Shoulder Dumbbell Press</string>
+    <string comment="" name="exercise__upright_rows">Upright Rows</string>
+    <string comment="" name="exercise__treadmill">Treadmill</string>
+    <string comment="" name="exercise__eliptical_trainer">Eliptical Trainer</string>
+    <string comment="" name="exercise__rowing_machine">Rowing Machine</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Running</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Walking</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Cycling</string>
+    <string comment="" name="exercise__stationary_bike">Stationary Bike</string>
+    <string comment="" name="exercise__stair_climber">Stair Climber</string>
+    <string comment="" name="exercise__jump_rope">Jump Rope</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Inline Skates</string>
+    <string comment="" name="exercise__assisted_chinup">Assisted Chin Up</string>
+    <string comment="" name="exercise__assisted_pullup">Assisted Pull Up</string>
+    <string comment="" name="exercise__assisted_dips">Assisted Dips</string>
+    <string comment="" name="exercise__bw_squat">Bodyweight Squat</string>
+    <string comment="" name="exercise__push_ups">Push Ups</string>
+    <string comment="" name="exercise__wall_sits">Wall Sits</string>
+    <string comment="" name="exercise__front_plank">Front Plank</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Stretching</string>
+    <string comment="" name="exercise__hip_trusters">Hip Thrust</string>
+</resources>

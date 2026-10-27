@@ -1,0 +1,62 @@
+.class public final Lo0/f$G;
+.super Lo0/f;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lo0/f;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "G"
+.end annotation
+
+
+# static fields
+.field public static final d:Lo0/f$G;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lo0/f$G;
+
+    invoke-direct {v0}, Lo0/f$G;-><init>()V
+
+    sput-object v0, Lo0/f$G;->d:Lo0/f$G;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 6
+
+    const/4 v4, 0x7
+
+    const/4 v5, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    invoke-direct/range {v0 .. v5}, Lo0/f;-><init>(IIZILkotlin/jvm/internal/k;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected a(Lo0/h;Li0/c;Ln0/t;Lk0/e;Lm0/g;)V
+    .locals 0
+
+    invoke-virtual {p3}, Ln0/t;->K()V
+
+    return-void
+.end method

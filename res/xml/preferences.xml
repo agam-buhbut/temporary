@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/settings__theme">
+        <SwitchPreference android:title="@string/settings__always_night" android:key="alwaysNightPref" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/settings__auto_night" android:key="followSystemNightPref" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings__language_title">
+        <androidx.preference.DropDownPreference android:entries="@array/language_entries" android:title="current" android:key="languagePref" android:defaultValue="en" android:entryValues="@array/language_options" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings__integrations">
+        <Preference android:title="@string/health_connect" android:key="healthConnect" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/statistics__title">
+        <SwitchPreference android:title="@string/chart_settings__include_warmup" android:key="includeWarmUpInStats" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/unilateral__settings_choice" android:key="countSingleArmTwice" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/history__title">
+        <SwitchPreference android:title="Show exercise notes" android:key="showExerciseNotesInHistory" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings__finish_title">
+        <DropDownPreference android:key="reminderDuration" android:defaultValue="10" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings__header_log_settings">
+        <SwitchPreference android:title="@string/keep_screen_on" android:key="keepScreenOn" android:defaultValue="false" android:summaryOn="@string/keep_screen_on_warning_message" android:summaryOff="@string/keep_screen_on_warning_message" />
+        <Preference android:title="@string/configure_sounds" android:key="timerEngine" />
+        <Preference android:title="@string/unit__weight" android:key="weightUnit" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/privacy__title">
+        <SwitchPreference android:title="@string/privacy__send_anonymous_analytics" android:key="allowAnonymousUsageTracking" android:summary="@string/privacy__analytics_explanation" android:defaultValue="true" />
+        <SwitchPreference android:title="@string/privacy__enable_crash_reports" android:key="allowCrashReports" android:defaultValue="true" />
+    </PreferenceCategory>
+</androidx.preference.PreferenceScreen>

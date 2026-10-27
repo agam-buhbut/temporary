@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.listitem.ListItemLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.listitem.ListItemCardView android:id="@id/list_item_card" android:focusable="true" android:clickable="true" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listItemCardViewSegmentedStyle">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_with_icon_height">
+            <TextView android:textAppearance="@style/TextAppearance.Material3.BodyLarge" android:gravity="center_vertical" android:id="@id/textView" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/imageButton" android:layout_alignParentStart="true" />
+            <ImageButton android:id="@id/imageButton" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_baseline_more_horiz_24" android:layout_centerVertical="true" android:contentDescription="@string/accessibility_label__more_button" android:paddingStart="12.0dip" android:paddingEnd="4.0dip" android:layout_alignParentEnd="true" style="@style/AppTheme.MoreButton" />
+        </RelativeLayout>
+    </com.google.android.material.listitem.ListItemCardView>
+</com.google.android.material.listitem.ListItemLayout>

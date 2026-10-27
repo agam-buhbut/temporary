@@ -1,0 +1,38 @@
+.class Lkotlin/reflect/jvm/internal/impl/renderer/n;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# instance fields
+.field private final a:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkotlin/reflect/jvm/internal/impl/renderer/n;->a:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Lkotlin/reflect/jvm/internal/impl/renderer/n;->a:Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;
+
+    check-cast p1, Lkotlin/reflect/jvm/internal/impl/types/TypeProjection;
+
+    invoke-static {p0, p1}, Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;->y(Lkotlin/reflect/jvm/internal/impl/renderer/DescriptorRendererImpl;Lkotlin/reflect/jvm/internal/impl/types/TypeProjection;)Ljava/lang/CharSequence;
+
+    move-result-object p0
+
+    return-object p0
+.end method

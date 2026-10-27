@@ -1,0 +1,68 @@
+.class final LA/h$d;
+.super Lkotlin/coroutines/jvm/internal/d;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LA/h;->m(Lz/F0;FFLkotlin/jvm/functions/Function1;Le9/e;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field synthetic a:Ljava/lang/Object;
+
+.field final synthetic b:LA/h;
+
+.field c:I
+
+
+# direct methods
+.method constructor <init>(LA/h;Le9/e;)V
+    .locals 0
+
+    iput-object p1, p0, LA/h$d;->b:LA/h;
+
+    invoke-direct {p0, p2}, Lkotlin/coroutines/jvm/internal/d;-><init>(Le9/e;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+
+    iput-object p1, p0, LA/h$d;->a:Ljava/lang/Object;
+
+    iget p1, p0, LA/h$d;->c:I
+
+    const/high16 v0, -0x80000000
+
+    or-int/2addr p1, v0
+
+    iput p1, p0, LA/h$d;->c:I
+
+    iget-object v0, p0, LA/h$d;->b:LA/h;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    move-object v5, p0
+
+    invoke-static/range {v0 .. v5}, LA/h;->i(LA/h;Lz/F0;FFLkotlin/jvm/functions/Function1;Le9/e;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method

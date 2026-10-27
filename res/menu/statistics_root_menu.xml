@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_icons8_bar_chart_android" android:id="@id/export_to_excel" android:title="@string/more__export_to_excel" app:showAsAction="never" />
+</menu>

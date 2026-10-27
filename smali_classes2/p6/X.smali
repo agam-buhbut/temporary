@@ -1,0 +1,429 @@
+.class public final Lp6/X;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field private static c:Lp6/X;
+
+
+# instance fields
+.field private final a:Ljava/lang/String;
+
+.field private final b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+
+# direct methods
+.method private constructor <init>(Ljava/lang/String;Lcom/google/android/gms/internal/firebase-auth-api/zzmy;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lp6/X;->a:Ljava/lang/String;
+
+    iput-object p2, p0, Lp6/X;->b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    return-void
+.end method
+
+.method public static b(Landroid/content/Context;Ljava/lang/String;)Lp6/X;
+    .locals 1
+
+    sget-object v0, Lp6/X;->c:Lp6/X;
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, v0, Lp6/X;->a:Ljava/lang/String;
+
+    invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    :cond_0
+    new-instance v0, Lp6/X;
+
+    invoke-static {p0, p1}, Lp6/X;->e(Landroid/content/Context;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    move-result-object p0
+
+    invoke-direct {v0, p1, p0}, Lp6/X;-><init>(Ljava/lang/String;Lcom/google/android/gms/internal/firebase-auth-api/zzmy;)V
+
+    sput-object v0, Lp6/X;->c:Lp6/X;
+
+    :cond_1
+    sget-object p0, Lp6/X;->c:Lp6/X;
+
+    return-object p0
+.end method
+
+.method private static c(Landroid/content/Context;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+    .locals 3
+
+    new-instance v0, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;-><init>()V
+
+    const-string v1, "StorageCryptoKeyset"
+
+    invoke-static {p1}, Lp6/X;->f(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, p0, v1, v2}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;->zza(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;
+
+    move-result-object p0
+
+    sget-object v0, Lcom/google/android/gms/internal/firebase-auth-api/zzcv;->zzb:Lcom/google/android/gms/internal/firebase-auth-api/zzxb;
+
+    invoke-virtual {p0, v0}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzxb;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;
+
+    move-result-object p0
+
+    const-string v0, "android-keystore://firebear_main_key_id_for_storage_crypto.%s"
+
+    filled-new-array {p1}, [Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-static {v0, p1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;->zza(Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy$zza;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static e(Landroid/content/Context;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+    .locals 4
+
+    :try_start_0
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzcl;->zza()V
+
+    invoke-static {p0, p1}, Lp6/X;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "Exception encountered during crypto setup:\n"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "FirebearStorageCryptoHelper"
+
+    invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    instance-of v0, v0, Ljava/security/GeneralSecurityException;
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p1}, Lp6/X;->f(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    const-string v1, "StorageCryptoKeyset"
+
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    :try_start_1
+    invoke-static {p0, p1}, Lp6/X;->c(Landroid/content/Context;Ljava/lang/String;)Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    move-result-object p0
+    :try_end_1
+    .catch Ljava/security/GeneralSecurityException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_0
+
+    :catch_1
+    move-exception p0
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    const-string v0, "Exception encountered during second attempt to crypto setup:\n"
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {v2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method private static f(Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "com.google.firebase.auth.api.crypto.%s"
+
+    filled-new-array {p0}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {v0, p0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final a(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->m(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lp6/X;->b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string p0, "FirebearStorageCryptoHelper"
+
+    const-string p1, "KeysetManager failed to initialize - unable to decrypt data"
+
+    invoke-static {p0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v1
+
+    :cond_0
+    :try_start_0
+    monitor-enter v0
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iget-object p0, p0, Lp6/X;->b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzbm;
+
+    move-result-object p0
+
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzco;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzbb;
+
+    move-result-object v2
+
+    const-class v3, Lcom/google/android/gms/internal/firebase-auth-api/zzba;
+
+    invoke-virtual {p0, v2, v3}, Lcom/google/android/gms/internal/firebase-auth-api/zzbm;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzbb;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/android/gms/internal/firebase-auth-api/zzba;
+
+    new-instance v2, Ljava/lang/String;
+
+    const/4 v3, 0x2
+
+    invoke-static {p1, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+
+    move-result-object p1
+
+    invoke-interface {p0, p1, v1}, Lcom/google/android/gms/internal/firebase-auth-api/zzba;->zza([B[B)[B
+
+    move-result-object p0
+
+    sget-object p1, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+
+    invoke-direct {v2, p0, p1}, Ljava/lang/String;-><init>([BLjava/nio/charset/Charset;)V
+
+    monitor-exit v0
+
+    return-object v2
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Ljava/security/GeneralSecurityException; {:try_start_2 .. :try_end_2} :catch_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p1, "FirebearStorageCryptoHelper"
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v2, "Exception encountered while decrypting bytes:\n"
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v1
+.end method
+
+.method public final d(Ljava/lang/String;)Ljava/lang/String;
+    .locals 4
+
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/Preconditions;->m(Ljava/lang/Object;)Ljava/lang/Object;
+
+    iget-object v0, p0, Lp6/X;->b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    const-string p0, "FirebearStorageCryptoHelper"
+
+    const-string p1, "KeysetManager failed to initialize - unable to encrypt data"
+
+    invoke-static {p0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v1
+
+    :cond_0
+    :try_start_0
+    monitor-enter v0
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :try_start_1
+    iget-object p0, p0, Lp6/X;->b:Lcom/google/android/gms/internal/firebase-auth-api/zzmy;
+
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/firebase-auth-api/zzmy;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzbm;
+
+    move-result-object p0
+
+    invoke-static {}, Lcom/google/android/gms/internal/firebase-auth-api/zzco;->zza()Lcom/google/android/gms/internal/firebase-auth-api/zzbb;
+
+    move-result-object v2
+
+    const-class v3, Lcom/google/android/gms/internal/firebase-auth-api/zzba;
+
+    invoke-virtual {p0, v2, v3}, Lcom/google/android/gms/internal/firebase-auth-api/zzbm;->zza(Lcom/google/android/gms/internal/firebase-auth-api/zzbb;Ljava/lang/Class;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/android/gms/internal/firebase-auth-api/zzba;
+
+    sget-object v2, Ljava/nio/charset/StandardCharsets;->UTF_8:Ljava/nio/charset/Charset;
+
+    invoke-virtual {p1, v2}, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+
+    move-result-object p1
+
+    invoke-interface {p0, p1, v1}, Lcom/google/android/gms/internal/firebase-auth-api/zzba;->zzb([B[B)[B
+
+    move-result-object p0
+
+    const/4 p1, 0x2
+
+    invoke-static {p0, p1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
+
+    move-result-object p0
+
+    monitor-exit v0
+
+    return-object p0
+
+    :catchall_0
+    move-exception p0
+
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p0
+    :try_end_2
+    .catch Ljava/security/GeneralSecurityException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    const-string p1, "FirebearStorageCryptoHelper"
+
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p0
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    const-string v2, "Exception encountered while encrypting bytes:\n"
+
+    invoke-direct {v0, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-static {p1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
+
+    return-object v1
+.end method

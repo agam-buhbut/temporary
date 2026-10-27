@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>cloud_endpoint</key>
+        <value>repcountalpha6.us1.cloud.realm.io</value>
+    </entry>
+    <entry>
+        <key>realm_cloud_sync</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>realm_cloud_sign_in</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>segment_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>segment_appsflyer_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>welcome_email_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>num_workouts_logged_before_review_prompt</key>
+        <value>8</value>
+    </entry>
+    <entry>
+        <key>timer_help_articles</key>
+        <value />
+    </entry>
+    <entry>
+        <key>android_ask_for_review_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>auth_error_dialog_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>limited_time_offer_enabled</key>
+        <value>false</value>
+    </entry>
+    <entry>
+        <key>limited_time_offer_config</key>
+        <value>{}</value>
+    </entry>
+</defaultsMap>

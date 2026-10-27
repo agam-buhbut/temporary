@@ -1,0 +1,102 @@
+.class public final synthetic Lza/M;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements LI3/c$b;
+.implements Lkotlin/jvm/internal/n;
+
+
+# instance fields
+.field private final synthetic a:Lkotlin/jvm/functions/Function0;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/jvm/functions/Function0;)V
+    .locals 1
+
+    const-string v0, "function"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/t;->k(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lza/M;->a:Lkotlin/jvm/functions/Function0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a()Z
+    .locals 0
+
+    iget-object p0, p0, Lza/M;->a:Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p0}, Lkotlin/jvm/functions/Function0;->invoke()Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Boolean;
+
+    invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p0
+
+    return p0
+.end method
+
+.method public final b()LZ8/i;
+    .locals 0
+
+    iget-object p0, p0, Lza/M;->a:Lkotlin/jvm/functions/Function0;
+
+    return-object p0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    instance-of v0, p1, LI3/c$b;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    instance-of v0, p1, Lkotlin/jvm/internal/n;
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/n;->b()LZ8/i;
+
+    move-result-object p0
+
+    check-cast p1, Lkotlin/jvm/internal/n;
+
+    invoke-interface {p1}, Lkotlin/jvm/internal/n;->b()LZ8/i;
+
+    move-result-object p1
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/t;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p0
+
+    return p0
+
+    :cond_0
+    return v1
+.end method
+
+.method public final hashCode()I
+    .locals 0
+
+    invoke-interface {p0}, Lkotlin/jvm/internal/n;->b()LZ8/i;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
+
+    move-result p0
+
+    return p0
+.end method

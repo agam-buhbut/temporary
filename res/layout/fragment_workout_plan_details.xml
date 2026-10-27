@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appbar" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/collapsing_toolbar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:expandedTitleGravity="bottom" app:layout_scrollFlags="scroll|exitUntilCollapsed|snap" app:titleEnabled="true" style="@style/CollapsingToolbarStyle">
+            <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="200.0dip" app:layout_collapseMode="parallax">
+                <ImageView android:id="@id/headerImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:transitionName="imageView" />
+                <View android:id="@id/overlay" android:background="@drawable/overlay_gradient" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <com.google.android.material.appbar.MaterialToolbar android:theme="@style/CollapsingToolbarStyle" android:id="@id/workout_plan_toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:transitionName="toolbar" app:layout_collapseMode="pin" app:popupTheme="@style/PopupStyle" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:id="@id/nested_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:id="@id/description" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/list" android:paddingBottom="60.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/unlock_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/store__unlock_all_workouts" android:transitionName="unlockworkoutcontainer" app:layout_anchor="@id/nested_scroll" app:layout_anchorGravity="bottom|center" style="@style/AppTheme.ExtendedFloatingActionPurchase" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/add_to_my_workouts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/store__add_to_my_programs" app:layout_anchor="@id/nested_scroll" app:layout_anchorGravity="bottom|center" style="@style/AppTheme.ExtendedFloatingAction" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

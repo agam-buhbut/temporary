@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_icons8_time_machine" android:id="@id/main_activity__bottom_item_workout" android:title="@string/workout_list__title" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_icons8_barbell" android:id="@id/main_activity__bottom_item_routine" android:title="@string/common__routines" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_icons8_barbell" android:id="@id/main_activity__bottom_item_routine_new" android:title="@string/common__routines" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_icons8_bar_chart_android" android:id="@id/main_activity__bottom_item_stats" android:title="@string/statistics__title" app:showAsAction="ifRoom" />
+</menu>

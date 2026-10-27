@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/exercise_header" app:layout_constraintTop_toBottomOf="@id/divider" layout="@layout/listitem_workout_exercise_header" />
+    <include android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/listitem__divider" />
+    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" android:id="@id/set_text" android:paddingBottom="4.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="42.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/exercise_header" />
+    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" android:textColor="?android:textColorSecondary" android:id="@id/description" android:paddingBottom="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="42.0dip" android:layout_marginEnd="16.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/set_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

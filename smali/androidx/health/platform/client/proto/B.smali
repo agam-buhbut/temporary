@@ -1,0 +1,83 @@
+.class final Landroidx/health/platform/client/proto/B;
+.super Landroidx/health/platform/client/proto/A;
+.source "SourceFile"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroidx/health/platform/client/proto/A;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method a(Ljava/util/Map$Entry;)I
+    .locals 0
+
+    invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Landroid/support/v4/media/session/b;->a(Ljava/lang/Object;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method b(Ljava/lang/Object;)Landroidx/health/platform/client/proto/D;
+    .locals 0
+
+    invoke-static {p1}, Landroid/support/v4/media/session/b;->a(Ljava/lang/Object;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method c(Ljava/lang/Object;)Landroidx/health/platform/client/proto/D;
+    .locals 0
+
+    invoke-static {p1}, Landroid/support/v4/media/session/b;->a(Ljava/lang/Object;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method d(Landroidx/health/platform/client/proto/b0;)Z
+    .locals 0
+
+    const/4 p0, 0x0
+
+    return p0
+.end method
+
+.method e(Ljava/lang/Object;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Landroidx/health/platform/client/proto/B;->b(Ljava/lang/Object;)Landroidx/health/platform/client/proto/D;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroidx/health/platform/client/proto/D;->o()V
+
+    return-void
+.end method
+
+.method f(Landroidx/health/platform/client/proto/K0;Ljava/util/Map$Entry;)V
+    .locals 0
+
+    invoke-interface {p2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-static {p0}, Landroid/support/v4/media/session/b;->a(Ljava/lang/Object;)V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method

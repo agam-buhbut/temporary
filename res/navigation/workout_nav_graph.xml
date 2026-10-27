@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/workout_nav_graph" app:startDestination="@id/workout_fragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include app:graph="@navigation/select_exercise_graph" />
+    <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.workout.SupersetReorderFragment" android:id="@id/supersetReorderFragment">
+        <argument android:name="workoutId" app:argType="sp.repcount.database.realm.model.ref.WorkoutRef" />
+        <argument android:name="workoutSetIds" app:argType="sp.repcount.database.realm.model.ref.WorkoutSetRef[]" />
+    </fragment>
+    <include android:id="@id/edit_exercise_graph" app:graph="@navigation/edit_exercise_graph" />
+    <fragment android:label=" " android:name="sp.repcount.activities.workout.WorkoutFragment" android:id="@id/workout_fragment">
+        <action android:id="@id/action_workout_fragment_to_fragment_targets" app:destination="@id/fragment_targets" />
+        <action android:id="@id/action_workout_fragment_to_fragment_reorder" app:destination="@id/fragment_reorder" />
+        <action android:id="@id/action_workout_fragment_to_storeActivityFragment2" app:destination="@id/storeActivityFragment2" />
+        <deepLink android:id="@id/deepLink" app:uri="workout/{workoutid}" />
+        <action android:id="@id/action_workout_fragment_to_supersetReorderFragment" app:destination="@id/supersetReorderFragment" />
+        <action android:id="@id/action_workout_fragment_to_exerciseInstructionFragment" app:destination="@id/exerciseInstructionFragment" />
+        <action android:id="@id/action_workout_fragment_to_addOrEditExercisesNormalFragment3" app:destination="@id/edit_exercise_graph">
+            <argument android:name="title" app:argType="string" />
+            <argument android:name="exerciseIdentity" app:argType="string" />
+        </action>
+        <action android:id="@id/action_workout_fragment_to_exercise_select_graph" app:destination="@id/select_exercise_graph">
+            <argument android:name="requestCode" app:argType="integer" />
+            <argument android:name="workoutSetIds" app:argType="sp.repcount.database.realm.model.ref.WorkoutSetRef[]" app:nullable="true" />
+            <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_workout_fragment_to_editTimersFragment" app:destination="@id/editTimersFragment" />
+        <action android:id="@id/action_workout_fragment_to_pr_nav" app:destination="@id/pr_nav">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_workout_fragment_to_chart_nav" app:destination="@id/chart_nav" />
+        <action android:id="@id/action_workout_fragment_to_history_nav" app:destination="@id/history_nav" />
+        <argument android:name="workoutid" app:argType="string" app:nullable="true" />
+        <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+        <argument android:name="routineid" app:argType="string" app:nullable="true" />
+        <argument android:name="templateid" app:argType="string" app:nullable="true" />
+        <argument android:name="iscurrentworkout" android:defaultValue="true" app:argType="boolean" />
+        <argument android:name="placeholderType" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_workout_fragment_to_exerciseNotesFragment" app:destination="@id/exerciseNotesFragment" />
+        <action android:id="@id/action_workout_fragment_to_unitFragment2" app:destination="@id/workoutsetUnitSelectionFragment" />
+        <action android:id="@id/action_workout_fragment_to_unitFragment3" app:destination="@id/unitFragment3" />
+    </fragment>
+    <fragment android:label="@string/target__title" android:name="sp.repcount.activities.workout.target.WorkoutTargetFragment" android:id="@id/fragment_targets" />
+    <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.workout.ReorderWorkoutFragment" android:id="@id/fragment_reorder">
+        <argument android:name="workoutId" app:argType="sp.repcount.database.realm.model.ref.WorkoutRef" />
+    </fragment>
+    <fragment android:label="@string/store__title" android:name="sp.repcount.activities.store.StoreActivityFragment" android:id="@id/storeActivityFragment2" />
+    <fragment android:label="{title}" android:name="sp.repcount.activities.exerciseinstruction.ExerciseInstructionFragment" android:id="@id/exerciseInstructionFragment">
+        <argument android:name="title" app:argType="string" />
+        <argument android:name="exerciseKey" app:argType="string" />
+    </fragment>
+    <fragment android:label="EditTimersFragment" android:name="sp.repcount.activities.timer.EditTimersFragment" android:id="@id/editTimersFragment" />
+    <fragment android:label="@string/common__notes" android:name="sp.repcount.activities.workout.ExerciseNotesFragment" android:id="@id/exerciseNotesFragment">
+        <argument android:name="sectionId" app:argType="string" />
+        <argument android:name="workoutSetIds" app:argType="sp.repcount.database.realm.model.ref.WorkoutSetRef[]" />
+    </fragment>
+    <fragment android:label="WorkoutSetUnitSelectionFragment" android:name="sp.repcount.activities.settings.unit.WorkoutSetUnitSelectionFragment" android:id="@id/workoutsetUnitSelectionFragment">
+        <argument android:name="exerciseName" app:argType="string" />
+        <argument android:name="sectionId" app:argType="string" />
+        <argument android:name="workoutSet" app:argType="sp.repcount.database.realm.model.ref.WorkoutSetRef" />
+    </fragment>
+    <fragment android:label="UnitFragment" android:name="sp.repcount.activities.settings.unit.UnitFragment" android:id="@id/unitFragment3" />
+</navigation>

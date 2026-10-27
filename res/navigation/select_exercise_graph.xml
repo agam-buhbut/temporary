@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/select_exercise_graph" app:startDestination="@id/exerciseSelectRootFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/edit_exercise_graph" app:graph="@navigation/edit_exercise_graph" />
+    <fragment android:label="@string/store__title" android:name="sp.repcount.activities.store.StoreActivityFragment" android:id="@id/storeActivityFragment" />
+    <fragment android:label="activity_exercise_select" android:name="sp.repcount.activities.exerciseselect.ExerciseSelectRootFragment" android:id="@id/exerciseSelectRootFragment">
+        <action android:id="@id/exerciseRootToInstructions" app:destination="@id/exerciseInstructionFragment3">
+            <argument android:name="exerciseKey" app:argType="string" />
+            <argument android:name="title" app:argType="string" />
+        </action>
+        <argument android:name="routineExerciseIds" android:defaultValue="@null" app:argType="sp.repcount.database.realm.model.ref.RoutineExerciseRef[]" app:nullable="true" />
+        <argument android:name="requestCode" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="workoutSetIds" android:defaultValue="@null" app:argType="sp.repcount.database.realm.model.ref.WorkoutSetRef[]" app:nullable="true" />
+        <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_exerciseSelectRootFragment_to_storeActivityFragment" app:destination="@id/storeActivityFragment" />
+        <action android:id="@id/action_exerciseSelectRootFragment_to_select_edit_exercise_graph" app:destination="@id/edit_exercise_graph">
+            <argument android:name="exerciseIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="categoryIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="exerciseName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        </action>
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.exerciseinstruction.ExerciseInstructionFragment" android:id="@id/exerciseInstructionFragment3">
+        <argument android:name="title" app:argType="string" />
+        <argument android:name="exerciseKey" app:argType="string" />
+    </fragment>
+</navigation>

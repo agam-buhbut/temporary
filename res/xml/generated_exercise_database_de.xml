@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Beine</string>
+    <string comment="" name="routine__pull_routine">Ziehen</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Ganzkörper</string>
+    <string comment="" name="routine__push_routine">Drücken</string>
+    <string comment="" name="exercise__chrunches">Bauchpressen</string>
+    <string comment="" name="exercise__leg_raises">Beinheben</string>
+    <string comment="" name="exercise__triceps_extensions">Stirndrücken</string>
+    <string comment="" name="exercise__pushdowns">Kabelzug-Trizepsdrücken</string>
+    <string comment="" name="exercise__close_grip_bench">Enges Bankdrücken</string>
+    <string comment="" name="exercise__dips">Dips</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Langhantel-Bizepscurl</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Kurzhantel-Bizepscurl</string>
+    <string comment="" name="exercise__hammercurl">Hammercurl</string>
+    <string comment="" name="exercise__concentration_curl">Konzentrationscurl</string>
+    <string comment="" name="exercise__leg_press">Beinpresse</string>
+    <string comment="" name="exercise__squat">Kniebeuge</string>
+    <string comment="" name="exercise__lunges">Ausfallschritte</string>
+    <string comment="" name="exercise__front_squat">Frontkniebeugen</string>
+    <string comment="" name="exercise__calf_raises">Wadenheben</string>
+    <string comment="" name="exercise__seated_calf_raises">Wadenheben sitzend</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Gestrecktes Kreuzheben</string>
+    <string comment="" name="exercise__leg_curls">Beinbeugen</string>
+    <string comment="" name="exercise__leg_extensions">Beinstrecken</string>
+    <string comment="" name="exercise__deadlift">Kreuzheben</string>
+    <string comment="" name="exercise__chin_up">Klimmzug (Untergriff)</string>
+    <string comment="" name="exercise__pull_up">Klimmzug (Obergriff)</string>
+    <string comment="" name="exercise__cable_row">Kabelzugrudern</string>
+    <string comment="" name="exercise__dumbbell_row">Kurzhantelrudern</string>
+    <string comment="" name="exercise__barbell_row">Langhantelrudern</string>
+    <string comment="" name="exercise__pulldowns">Latzug</string>
+    <string comment="" name="exercise__hyperextensions">Rückenstrecken</string>
+    <string comment="" name="exercise__bench_press">Bankdrücken</string>
+    <string comment="" name="exercise__incline_bench_press">Schrägbankdrücken</string>
+    <string comment="" name="exercise__dumbbell_press">Kurzhantel-Bankdrücken</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Kurzhantel-Schrägbankdrücken</string>
+    <string comment="" name="exercise__dumbbell_flies">Kurzhantel-Fliegende</string>
+    <string comment="" name="exercise__cable_crossovers">Kabelzug-Fliegende</string>
+    <string comment="" name="exercise__military_press">Schulterdrücken stehend</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Kurzhantel-Seitheben</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Kurzhantel-Schulterdrücken</string>
+    <string comment="" name="exercise__upright_rows">Aufrechtes Rudern</string>
+    <string comment="" name="exercise__treadmill">Laufband</string>
+    <string comment="" name="exercise__eliptical_trainer">Crosstrainer</string>
+    <string comment="" name="exercise__rowing_machine">Rudermaschine</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Laufen</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Gehen</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Radfahren</string>
+    <string comment="" name="exercise__stationary_bike">Fahradergometer</string>
+    <string comment="" name="exercise__stair_climber">Treppensteiger</string>
+    <string comment="" name="exercise__jump_rope">Sprungseil</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Inlineskater</string>
+    <string comment="" name="exercise__assisted_chinup">Unterstützte Klimmzüge (Untergriff)</string>
+    <string comment="" name="exercise__assisted_pullup">Unterstütze Klimmzüge (Obergriff)</string>
+    <string comment="" name="exercise__assisted_dips">Unterstützte Dips</string>
+    <string comment="" name="exercise__bw_squat">Körpergewicht-Kniebeugen</string>
+    <string comment="" name="exercise__push_ups">Liegestütze</string>
+    <string comment="" name="exercise__wall_sits">Wall-Sits</string>
+    <string comment="" name="exercise__front_plank">Plank</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Dehnen</string>
+    <string comment="" name="exercise__hip_trusters">Beckenheben</string>
+</resources>

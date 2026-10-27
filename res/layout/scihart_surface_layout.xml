@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.scichart.charting.visuals.annotations.AnnotationSurface android:id="@id/annotationUnderlaySurface" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.scichart.charting.visuals.annotations.AnnotationSurface android:id="@id/annotationOverlaySurface" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.scichart.charting.visuals.annotations.AdornerLayer android:id="@id/adornerLayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.scichart.charting.visuals.ChartModifierSurface android:id="@id/chartModifierSurface" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.scichart.charting.visuals.RenderableSeriesArea android:id="@id/renderableSeriesArea" android:background="@android:color/transparent" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.scichart.charting.visuals.layout.LayoutableViewGroup android:id="@id/axisModifierSurfaceArea" android:background="@android:color/transparent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

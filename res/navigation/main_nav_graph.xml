@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/main_nav_graph" app:startDestination="@id/rootFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="sp.repcount.activities.statistics.AllSetsFragment" android:id="@id/allSetsFragment">
+        <argument android:name="exerciseId" app:argType="string" />
+        <argument android:name="sourceWorkout" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_allSetsFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+    <fragment android:name="sp.repcount.activities.statistics.scichart.SciChartFragment" android:id="@id/sciChartFragment">
+        <argument android:name="chartId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="exerciseIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="categoryIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <argument android:name="sourceWorkout" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_sciChartFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+    <fragment android:name="sp.repcount.activities.statistics.scichart.SciChartFragmentFirestore" android:id="@id/sciChartFragmentFirestore">
+        <argument android:name="chartId" android:defaultValue="-1" app:argType="integer" />
+        <argument android:name="exerciseDocument" android:defaultValue="@null" app:argType="sp.repcount.database.firestore.model.ExerciseDocument" app:nullable="true" />
+        <argument android:name="categoryDocument" android:defaultValue="@null" app:argType="sp.repcount.database.firestore.model.CategoryDocument" app:nullable="true" />
+        <action android:id="@id/action_sciChartFragmentFirestore_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+    <include app:graph="@navigation/pr_nav" />
+    <include app:graph="@navigation/unit_nav" />
+    <include app:graph="@navigation/workout_nav_graph" />
+    <include android:id="@id/edit_exercise_graph" app:graph="@navigation/edit_exercise_graph" />
+    <fragment android:label="@string/store__title" android:name="sp.repcount.activities.store.StoreActivityFragment" android:id="@id/mainToStore" />
+    <fragment android:label="{title}" android:name="sp.repcount.activities.exerciseinstruction.ExerciseInstructionFragment" android:id="@id/exerciseInstructionFragment2">
+        <argument android:name="exerciseKey" app:argType="string" />
+        <argument android:name="title" app:argType="string" />
+    </fragment>
+    <navigation android:id="@id/routineGraph" app:startDestination="@id/routineFragment">
+        <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.routine.reorder.ReorderRoutineExercisesFragment" android:id="@id/reorderRoutineExercisesFragment">
+            <argument android:name="routineId" app:argType="string" />
+        </fragment>
+        <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.routine.reorder.ReorderRoutineExerciseSupersetFragment" android:id="@id/reorderRoutineExercisesSupersetFragment">
+            <argument android:name="id" app:argType="string" />
+            <argument android:name="exerciseIds" app:argType="sp.repcount.database.realm.model.ref.RoutineExerciseRef[]" />
+        </fragment>
+        <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.routine.RoutineFragment" android:id="@id/routineFragment">
+            <argument android:name="routineId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="transitionName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="routineGroupId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <action android:id="@id/action_routineFragment_to_select_exercise_graph" app:destination="@id/select_exercise_graph">
+                <argument android:name="requestCode" app:argType="integer" />
+                <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+                <argument android:name="routineExerciseIds" android:defaultValue="@null" app:argType="sp.repcount.database.realm.model.ref.RoutineExerciseRef[]" app:nullable="true" />
+            </action>
+            <action android:id="@id/action_routineFragment_to_reorderRoutineExercisesFragment" app:destination="@id/reorderRoutineExercisesFragment" />
+            <action android:id="@id/action_routineFragment_to_reorderRoutineExercisesSupersetFragment" app:destination="@id/reorderRoutineExercisesSupersetFragment" />
+            <action android:id="@id/action_routineFragment_to_storeFragmentApril2021" app:destination="@id/storeFragmentApril2021" />
+        </fragment>
+        <include app:graph="@navigation/select_exercise_graph" />
+        <fragment android:label="routineStore" android:name="sp.repcount.activities.store.StoreActivityFragment" android:id="@id/storeFragmentApril2021" />
+    </navigation>
+    <fragment android:label=" " android:name="sp.repcount.activities.editcategories.firestore.FirestoreEditCategoriesFragment" android:id="@id/firestoreEditCategoriesFragment" />
+    <fragment android:label=" " android:name="sp.repcount.activities.editexercise.firestore.FirestoreEditExercisesFragment" android:id="@id/firestoreEditExercisesFragment" />
+    <fragment android:label="@string/common__settings" android:name="sp.repcount.activities.settings.FirestoreSettingsFragment" android:id="@id/settingsFragment" />
+    <fragment android:label="@string/account__title" android:name="sp.repcount.activities.settings.AccountFragment" android:id="@id/accountFragment" />
+    <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.routine.reorder.FirestoreReorderRoutineExercisesFragment" android:id="@id/firestoreReorderRoutineExercisesFragment">
+        <argument android:name="routine" app:argType="sp.repcount.database.firestore.model.RoutineDocument" />
+    </fragment>
+    <fragment android:label=" " android:name="sp.repcount.activities.main.FirestoreRootFragment" android:id="@id/firestoreRootFragment">
+        <action android:id="@id/action_firestoreRoot_to_reorderRoutine" app:destination="@id/firestoreReorderRoutineExercisesFragment" />
+        <action android:id="@id/action_firestoreRoot_to_storeActivityFragment" app:destination="@id/mainToStore" />
+        <action android:id="@id/action_firestoreRoot_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" app:nullable="true" />
+            <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+            <argument android:name="routineid" app:argType="string" app:nullable="true" />
+            <argument android:name="templateid" app:argType="string" app:nullable="true" />
+            <argument android:name="iscurrentworkout" android:defaultValue="true" app:argType="boolean" />
+            <argument android:name="placeholderType" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_firestoreRoot_to_repeatTargetFragment" app:destination="@id/repeatTargetFragment" />
+        <action android:id="@id/action_firestoreRoot_to_whatsNewFragment" app:destination="@id/whatsNewFragment" />
+    </fragment>
+    <fragment android:label=" " android:name="sp.repcount.activities.main.RootFragment" android:id="@id/rootFragment">
+        <action android:id="@id/action_rootFragment_to_storeActivityFragment3" app:destination="@id/mainToStore" />
+        <action android:id="@id/action_rootFragment_to_settingsFragment" app:destination="@id/settingsFragment" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+        <action android:id="@id/action_rootFragment_to_accountFragment" app:destination="@id/accountFragment" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+        <action android:id="@id/action_rootFragment_to_routineGraph" app:destination="@id/routineGraph">
+            <argument android:name="requestKey" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="routineId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="routineGroupId" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="transitionName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_rootFragment_to_firestoreEditCategoriesFragment" app:destination="@id/firestoreEditCategoriesFragment" />
+        <action android:id="@id/action_rootFragment_to_firestoreEditExercisesFragment" app:destination="@id/firestoreEditExercisesFragment" />
+        <action android:id="@id/action_rootFragment_to_root_edit_exercise_graph" app:destination="@id/edit_exercise_graph">
+            <argument android:name="exerciseIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="categoryIdentity" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="exerciseName" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_rootFragment_to_reorderRoutinesFragment" app:destination="@id/reorderRoutinesFragment" />
+        <action android:id="@id/action_rootFragment_to_repeatTargetFragment" app:destination="@id/repeatTargetFragment" />
+        <action android:id="@id/action_rootFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" app:nullable="true" />
+            <argument android:name="transitionName" app:argType="string" app:nullable="true" />
+            <argument android:name="routineid" app:argType="string" app:nullable="true" />
+            <argument android:name="templateid" app:argType="string" app:nullable="true" />
+            <argument android:name="iscurrentworkout" android:defaultValue="true" app:argType="boolean" />
+            <argument android:name="placeholderType" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_rootFragment_to_whatsNewFragment" app:destination="@id/whatsNewFragment" />
+        <action android:id="@id/action_rootFragment_to_emailAccountAdminFragment" app:destination="@id/emailAccountAdminFragment" />
+    </fragment>
+    <fragment android:label="@string/workout__reorder" android:name="sp.repcount.activities.routine.reorder.ReorderRoutinesFragment" android:id="@id/reorderRoutinesFragment" />
+    <fragment android:label="RepeatTargetFragment" android:name="sp.repcount.activities.workout.repeat.RepeatTargetFragment" android:id="@id/repeatTargetFragment">
+        <argument android:name="workoutId" app:argType="string" />
+    </fragment>
+    <action android:id="@id/action_global_sciChartFragment" app:destination="@id/sciChartFragment" />
+    <action android:id="@id/action_global_sciChartFragmentFirestore" app:destination="@id/sciChartFragmentFirestore" />
+    <action android:id="@id/action_global_personalRecordsFragment" app:destination="@id/pr_nav" />
+    <action android:id="@id/action_global_workout_nav_graph" app:destination="@id/workout_nav_graph" />
+    <action android:id="@id/action_global_allSetsFragment" app:destination="@id/allSetsFragment" />
+    <action android:id="@id/action_global_soundSettingsFragment" app:destination="@id/sound_settings_nav" />
+    <action android:id="@id/action_global_healthConnectConfigurationFragment" app:destination="@id/healthConnectConfigurationFragment" />
+    <action android:id="@id/action_global_unitSettingsFragment" app:destination="@id/unit_nav" />
+    <action android:id="@id/action_global_helpCenterFragment" app:destination="@id/helpCenterFragment" />
+    <action android:id="@id/action_global_helpArticleFragment" app:destination="@id/helpArticleFragment" />
+    <action android:id="@id/action_global_helpCollectionFragment" app:destination="@id/helpCollectionFragment" />
+    <action android:id="@id/action_global_emailAccountAdminFragment" app:destination="@id/emailAccountAdminFragment" />
+    <action android:id="@id/action_global_mainToStore" app:destination="@id/mainToStore" />
+    <fragment android:label="HelpCenterFragment" android:name="sp.repcount.activities.help.HelpCenterFragment" android:id="@id/helpCenterFragment" />
+    <fragment android:label="HelpArticleFragment" android:name="sp.repcount.activities.help.HelpArticleFragment" android:id="@id/helpArticleFragment">
+        <argument android:name="articleId" app:argType="string" />
+        <action android:id="@id/action_helpArticleFragment_self" app:destination="@id/helpArticleFragment" />
+    </fragment>
+    <fragment android:label="HelpCollectionFragment" android:name="sp.repcount.activities.help.HelpCollectionFragment" android:id="@id/helpCollectionFragment">
+        <argument android:name="collectionId" app:argType="string" />
+        <argument android:name="collectionName" app:argType="string" />
+        <action android:id="@id/action_helpCollectionFragment_to_helpArticleFragment" app:destination="@id/helpArticleFragment" />
+    </fragment>
+    <fragment android:label="WhatsNewFragment" android:name="sp.repcount.activities.whatsnew.WhatsNewFragment" android:id="@id/whatsNewFragment" />
+    <include app:graph="@navigation/sound_settings_nav" />
+    <fragment android:label="HealthConnectConfigurationFragment" android:name="sp.repcount.activities.settings.healthconnect.HealthConnectConfigurationFragment" android:id="@id/healthConnectConfigurationFragment" />
+    <fragment android:label="EmailAccountAdminFragment" android:name="sp.repcount.activities.settings.emailaccountadmin.EmailAccountAdminFragment" android:id="@id/emailAccountAdminFragment" />
+</navigation>

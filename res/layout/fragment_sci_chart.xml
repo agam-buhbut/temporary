@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:transitionGroup="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppBarLayoutStyle">
+        <androidx.appcompat.widget.Toolbar android:theme="@style/ToolBarStyle" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:transitionName="toolbar" app:popupTheme="@style/PopupStyle" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppBarLayoutStyle.Tab" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <RelativeLayout android:id="@id/empty_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" android:gravity="center" android:id="@id/empty_message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="32.0dip" android:text="@string/charts__empty_message" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/chart_layout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/chartHeader" />
+        <include android:id="@id/progress_container" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/chart_loading_overlay" />
+        <androidx.compose.ui.platform.ComposeView android:id="@id/chartHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHeight_min="85.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/appbarLayout" layout="@layout/appbar_layout_material" />
+    <androidx.fragment.app.FragmentContainerView android:name="androidx.navigation.fragment.NavHostFragment" android:id="@id/routine_nav_host" android:tag="ChildNav" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" app:navGraph="@navigation/routine_nav" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:id="@id/routineAddExerciseFab" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/common__add_exercise" android:layout_centerHorizontal="true" android:transitionName="routineAddExerciseFabTransition" app:layout_anchor="@id/routine_nav_host" app:layout_anchorGravity="bottom|center" style="@style/AddExerciseFab" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

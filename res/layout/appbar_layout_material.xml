@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:orientation="vertical" android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transitionName="appBar" style="@style/AppBarLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ToolBarStyle" android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:transitionName="toolbar" app:popupTheme="@style/PopupStyle" />
+</com.google.android.material.appbar.AppBarLayout>

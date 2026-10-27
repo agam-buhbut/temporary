@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">다리</string>
+    <string comment="" name="routine__pull_routine">풀</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">풀 바디</string>
+    <string comment="" name="routine__push_routine">푸시</string>
+    <string comment="" name="exercise__chrunches">크런치</string>
+    <string comment="" name="exercise__leg_raises">레그 레이즈</string>
+    <string comment="" name="exercise__triceps_extensions">트라이셉스 익스텐션</string>
+    <string comment="" name="exercise__pushdowns">푸시다운</string>
+    <string comment="" name="exercise__close_grip_bench">클로즈 그립 벤치 프레스</string>
+    <string comment="" name="exercise__dips">딥스</string>
+    <string comment="" name="exercise__barbell_bicep_curl">바벨 바이셉 컬</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">덤벨 바이셉 컬</string>
+    <string comment="" name="exercise__hammercurl">해머 컬</string>
+    <string comment="" name="exercise__concentration_curl">컨센트레이션 컬</string>
+    <string comment="" name="exercise__leg_press">레그 프레스</string>
+    <string comment="" name="exercise__squat">스쿼트</string>
+    <string comment="" name="exercise__lunges">런지</string>
+    <string comment="" name="exercise__front_squat">프론트 스쿼트</string>
+    <string comment="" name="exercise__calf_raises">카프 레이즈</string>
+    <string comment="" name="exercise__seated_calf_raises">시티드 카프 레이즈</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">스트레이트 레그 데드리프트</string>
+    <string comment="" name="exercise__leg_curls">레그 컬</string>
+    <string comment="" name="exercise__leg_extensions">레그 익스텐션</string>
+    <string comment="" name="exercise__deadlift">데드리프트</string>
+    <string comment="" name="exercise__chin_up">친업</string>
+    <string comment="" name="exercise__pull_up">풀업</string>
+    <string comment="" name="exercise__cable_row">케이블 로우</string>
+    <string comment="" name="exercise__dumbbell_row">덤벨 로우</string>
+    <string comment="" name="exercise__barbell_row">바벨 로우</string>
+    <string comment="" name="exercise__pulldowns">풀다운</string>
+    <string comment="" name="exercise__hyperextensions">하이퍼익스텐션</string>
+    <string comment="" name="exercise__bench_press">벤치프레스</string>
+    <string comment="" name="exercise__incline_bench_press">인클라인 벤치프레스</string>
+    <string comment="" name="exercise__dumbbell_press">덤벨 프레스</string>
+    <string comment="" name="exercise__incline_dumbbell_press">인클라인 덤벨 프레스</string>
+    <string comment="" name="exercise__dumbbell_flies">덤벨 플라이</string>
+    <string comment="" name="exercise__cable_crossovers">케이블 크로스오버</string>
+    <string comment="" name="exercise__military_press">밀리터리 프레스</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">덤벨 레터럴 레이즈</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">숄더 덤벨 프레스</string>
+    <string comment="" name="exercise__upright_rows">업라이트 로우</string>
+    <string comment="" name="exercise__treadmill">트레드밀</string>
+    <string comment="" name="exercise__eliptical_trainer">일립티컬 트레이너</string>
+    <string comment="" name="exercise__rowing_machine">로잉머신</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">러닝</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">워킹</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">사이클링</string>
+    <string comment="" name="exercise__stationary_bike">스테이셔너리 바이크</string>
+    <string comment="" name="exercise__stair_climber">스테어 클라이머</string>
+    <string comment="" name="exercise__jump_rope">줄넘기</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">인라인 스케이트</string>
+    <string comment="" name="exercise__assisted_chinup">어시스티드 친업</string>
+    <string comment="" name="exercise__assisted_pullup">어시스티드 풀업</string>
+    <string comment="" name="exercise__assisted_dips">어시스티드 딥스</string>
+    <string comment="" name="exercise__bw_squat">바디웨이트 스쿼트</string>
+    <string comment="" name="exercise__push_ups">푸시업</string>
+    <string comment="" name="exercise__wall_sits">월 싯</string>
+    <string comment="" name="exercise__front_plank">프런트 플랭크</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">스트레칭</string>
+    <string comment="" name="exercise__hip_trusters">힙 쓰러스트</string>
+</resources>

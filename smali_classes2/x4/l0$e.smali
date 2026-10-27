@@ -1,0 +1,234 @@
+.class final Lx4/l0$e;
+.super Lkotlin/coroutines/jvm/internal/l;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lx4/l0;->v(Le9/e;)Ljava/lang/Object;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field a:I
+
+.field final synthetic b:Lx4/l0;
+
+.field final synthetic c:Landroidx/work/c;
+
+.field final synthetic d:Lw4/k;
+
+
+# direct methods
+.method constructor <init>(Lx4/l0;Landroidx/work/c;Lw4/k;Le9/e;)V
+    .locals 0
+
+    iput-object p1, p0, Lx4/l0$e;->b:Lx4/l0;
+
+    iput-object p2, p0, Lx4/l0$e;->c:Landroidx/work/c;
+
+    iput-object p3, p0, Lx4/l0$e;->d:Lw4/k;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1, p4}, Lkotlin/coroutines/jvm/internal/l;-><init>(ILe9/e;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Le9/e;)Le9/e;
+    .locals 2
+
+    new-instance p1, Lx4/l0$e;
+
+    iget-object v0, p0, Lx4/l0$e;->b:Lx4/l0;
+
+    iget-object v1, p0, Lx4/l0$e;->c:Landroidx/work/c;
+
+    iget-object p0, p0, Lx4/l0$e;->d:Lw4/k;
+
+    invoke-direct {p1, v0, v1, p0, p2}, Lx4/l0$e;-><init>(Lx4/l0;Landroidx/work/c;Lw4/k;Le9/e;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Le9/e;
+
+    invoke-virtual {p0, p1, p2}, Lx4/l0$e;->invoke(Lkotlinx/coroutines/CoroutineScope;Le9/e;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Le9/e;)Ljava/lang/Object;
+    .locals 0
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lx4/l0$e;->create(Ljava/lang/Object;Le9/e;)Le9/e;
+
+    move-result-object p0
+
+    check-cast p0, Lx4/l0$e;
+
+    sget-object p1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p0, p1}, Lx4/l0$e;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 10
+
+    invoke-static {}, Lf9/b;->f()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget v1, p0, Lx4/l0$e;->a:I
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x1
+
+    if-eqz v1, :cond_2
+
+    if-eq v1, v3, :cond_1
+
+    if-ne v1, v2, :cond_0
+
+    invoke-static {p1}, LZ8/y;->b(Ljava/lang/Object;)V
+
+    return-object p1
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_1
+    invoke-static {p1}, LZ8/y;->b(Ljava/lang/Object;)V
+
+    move-object v9, p0
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {p1}, LZ8/y;->b(Ljava/lang/Object;)V
+
+    iget-object p1, p0, Lx4/l0$e;->b:Lx4/l0;
+
+    invoke-static {p1}, Lx4/l0;->d(Lx4/l0;)Landroid/content/Context;
+
+    move-result-object v4
+
+    iget-object p1, p0, Lx4/l0$e;->b:Lx4/l0;
+
+    invoke-virtual {p1}, Lx4/l0;->m()LE4/I;
+
+    move-result-object v5
+
+    iget-object v6, p0, Lx4/l0$e;->c:Landroidx/work/c;
+
+    iget-object v7, p0, Lx4/l0$e;->d:Lw4/k;
+
+    iget-object p1, p0, Lx4/l0$e;->b:Lx4/l0;
+
+    invoke-static {p1}, Lx4/l0;->f(Lx4/l0;)LG4/b;
+
+    move-result-object v8
+
+    iput v3, p0, Lx4/l0$e;->a:I
+
+    move-object v9, p0
+
+    invoke-static/range {v4 .. v9}, LF4/D;->b(Landroid/content/Context;LE4/I;Landroidx/work/c;Lw4/k;LG4/b;Le9/e;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-ne p0, v0, :cond_3
+
+    goto :goto_1
+
+    :cond_3
+    :goto_0
+    invoke-static {}, Lx4/n0;->a()Ljava/lang/String;
+
+    move-result-object p0
+
+    iget-object p1, v9, Lx4/l0$e;->b:Lx4/l0;
+
+    invoke-static {}, Lw4/u;->e()Lw4/u;
+
+    move-result-object v1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "Starting work for "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Lx4/l0;->m()LE4/I;
+
+    move-result-object p1
+
+    iget-object p1, p1, LE4/I;->c:Ljava/lang/String;
+
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p0, p1}, Lw4/u;->a(Ljava/lang/String;Ljava/lang/String;)V
+
+    iget-object p0, v9, Lx4/l0$e;->c:Landroidx/work/c;
+
+    invoke-virtual {p0}, Landroidx/work/c;->h()Lcom/google/common/util/concurrent/j;
+
+    move-result-object p0
+
+    const-string p1, "startWork(...)"
+
+    invoke-static {p0, p1}, Lkotlin/jvm/internal/t;->j(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object p1, v9, Lx4/l0$e;->c:Landroidx/work/c;
+
+    iput v2, v9, Lx4/l0$e;->a:I
+
+    invoke-static {p0, p1, v9}, Lx4/n0;->d(Lcom/google/common/util/concurrent/j;Landroidx/work/c;Le9/e;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-ne p0, v0, :cond_4
+
+    :goto_1
+    return-object v0
+
+    :cond_4
+    return-object p0
+.end method

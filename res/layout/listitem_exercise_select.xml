@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/list_item_with_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/supersetLabelLayout" android:layout_width="60.0dip" android:layout_height="fill_parent">
+        <include android:id="@id/digits" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="34.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/digit_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView android:textAppearance="@style/TextAppearance.Material3.BodyLarge" android:textColor="?colorOnSurface" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" />
+    <ImageButton android:id="@id/infoButton" android:padding="@dimen/list_item_edge_padding" android:layout_width="48.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_icons8_info" android:contentDescription="@string/accessibility_label__info_button" style="@style/AppTheme.MoreButton" />
+    <ImageButton android:id="@id/moreButton" android:padding="@dimen/list_item_edge_padding" android:layout_width="48.0dip" android:layout_height="fill_parent" android:contentDescription="@string/accessibility_label__more_button" style="@style/AppTheme.MoreButton" />
+</LinearLayout>

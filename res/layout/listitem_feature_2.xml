@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_icons8_bar_chart_android" android:layout_centerVertical="true" android:layout_marginStart="@dimen/list_item_edge_padding" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_marginStart="72.0dip" android:layout_marginEnd="16.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.Material3.TitleSmall" android:textColor="?colorOnSurface" android:id="@id/titleView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="6.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.BodySmall" android:textColor="?colorOnSurface" android:id="@id/descriptionView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:alpha="0.6" />
+        <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.button.MaterialButton android:id="@id/readMore" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/common__more_info" style="@style/AppTheme.Button.Borderless.Colored" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

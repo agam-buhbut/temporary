@@ -1,0 +1,233 @@
+.class final LXa/T0$b;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LXa/T0;->h(Lsp/repcount/activities/signin/InitViewModel;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function0;Li0/r;II)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lmc/f;
+
+.field final synthetic b:Lsp/repcount/activities/signin/InitViewModel;
+
+
+# direct methods
+.method constructor <init>(Lmc/f;Lsp/repcount/activities/signin/InitViewModel;)V
+    .locals 0
+
+    iput-object p1, p0, LXa/T0$b;->a:Lmc/f;
+
+    iput-object p2, p0, LXa/T0$b;->b:Lsp/repcount/activities/signin/InitViewModel;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static synthetic a(Lsp/repcount/activities/signin/InitViewModel;Lmc/f;)Lkotlin/Unit;
+    .locals 0
+
+    invoke-static {p0, p1}, LXa/T0$b;->c(Lsp/repcount/activities/signin/InitViewModel;Lmc/f;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method private static final c(Lsp/repcount/activities/signin/InitViewModel;Lmc/f;)Lkotlin/Unit;
+    .locals 1
+
+    invoke-virtual {p1}, Lmc/f;->f()Ljava/lang/String;
+
+    move-result-object p1
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, p1, v0}, Lsp/repcount/activities/signin/InitViewModel;->q(Ljava/lang/String;Z)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final b(Li0/r;I)V
+    .locals 13
+
+    and-int/lit8 v2, p2, 0x3
+
+    const/4 v3, 0x2
+
+    if-ne v2, v3, :cond_1
+
+    invoke-interface {p1}, Li0/r;->h()Z
+
+    move-result v2
+
+    if-nez v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {p1}, Li0/r;->M()V
+
+    return-void
+
+    :cond_1
+    :goto_0
+    invoke-static {}, Li0/t;->k()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    const/4 v2, -0x1
+
+    const-string v3, "sp.repcount.activities.signin.compose.InitView.<anonymous>.<anonymous> (InitView.kt:86)"
+
+    const v4, 0x77e31eb7
+
+    invoke-static {v4, p2, v2, v3}, Li0/t;->o(IIILjava/lang/String;)V
+
+    :cond_2
+    iget-object v1, p0, LXa/T0$b;->a:Lmc/f;
+
+    invoke-virtual {v1}, Lmc/f;->b()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    const v1, 0x3db368b2
+
+    invoke-interface {p1, v1}, Li0/r;->W(I)V
+
+    iget-object v1, p0, LXa/T0$b;->b:Lsp/repcount/activities/signin/InitViewModel;
+
+    invoke-interface {p1, v1}, Li0/r;->F(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    iget-object v2, p0, LXa/T0$b;->a:Lmc/f;
+
+    invoke-interface {p1, v2}, Li0/r;->F(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    or-int/2addr v1, v2
+
+    iget-object v2, p0, LXa/T0$b;->b:Lsp/repcount/activities/signin/InitViewModel;
+
+    iget-object v3, p0, LXa/T0$b;->a:Lmc/f;
+
+    invoke-interface {p1}, Li0/r;->D()Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-nez v1, :cond_3
+
+    sget-object v1, Li0/r;->a:Li0/r$a;
+
+    invoke-virtual {v1}, Li0/r$a;->a()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-ne v4, v1, :cond_4
+
+    :cond_3
+    new-instance v4, LXa/U0;
+
+    invoke-direct {v4, v2, v3}, LXa/U0;-><init>(Lsp/repcount/activities/signin/InitViewModel;Lmc/f;)V
+
+    invoke-interface {p1, v4}, Li0/r;->u(Ljava/lang/Object;)V
+
+    :cond_4
+    check-cast v4, Lkotlin/jvm/functions/Function0;
+
+    invoke-interface {p1}, Li0/r;->Q()V
+
+    new-instance v1, LXa/T0$b$a;
+
+    iget-object v0, p0, LXa/T0$b;->a:Lmc/f;
+
+    invoke-direct {v1, v0}, LXa/T0$b$a;-><init>(Lmc/f;)V
+
+    const/16 v0, 0x36
+
+    const v2, -0x1a8d953e
+
+    const/4 v3, 0x1
+
+    invoke-static {v2, v3, v1, p1, v0}, Lu0/z;->d(IZLjava/lang/Object;Li0/r;I)Lu0/f;
+
+    move-result-object v9
+
+    const/high16 v11, 0x30000000
+
+    const/16 v12, 0x1fe
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, v4
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v8, 0x0
+
+    move-object v10, p1
+
+    invoke-static/range {v0 .. v12}, Le0/G0;->h(Lkotlin/jvm/functions/Function0;LC0/p;ZLJ0/F0;Le0/q0;Le0/s0;Lx/x;LD/k1;LB/m;Lkotlin/jvm/functions/Function3;Li0/r;II)V
+
+    :cond_5
+    invoke-static {}, Li0/t;->k()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    invoke-static {}, Li0/t;->n()V
+
+    :cond_6
+    return-void
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Li0/r;
+
+    check-cast p2, Ljava/lang/Number;
+
+    invoke-virtual {p2}, Ljava/lang/Number;->intValue()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, p2}, LXa/T0$b;->b(Li0/r;I)V
+
+    sget-object p0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object p0
+.end method

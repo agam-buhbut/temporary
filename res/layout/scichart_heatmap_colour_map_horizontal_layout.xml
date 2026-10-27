@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/colorMapView" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentTop="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+    <TextView android:id="@id/minimumTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_below="@id/colorMapView" android:textAlignment="viewStart" android:layout_alignParentStart="true" />
+    <TextView android:id="@id/middleTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_below="@id/colorMapView" android:layout_centerHorizontal="true" android:textAlignment="center" />
+    <TextView android:id="@id/maximumTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_below="@id/colorMapView" android:textAlignment="viewEnd" android:layout_alignParentEnd="true" />
+</merge>

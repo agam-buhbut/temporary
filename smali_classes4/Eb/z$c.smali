@@ -1,0 +1,145 @@
+.class public final LEb/z$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lsp/repcount/views/NavigationEnabledEditText$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LEb/z;->c0(LAb/d;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:LEb/z;
+
+.field final synthetic b:LAb/d;
+
+
+# direct methods
+.method constructor <init>(LEb/z;LAb/d;)V
+    .locals 0
+
+    iput-object p1, p0, LEb/z$c;->a:LEb/z;
+
+    iput-object p2, p0, LEb/z$c;->b:LAb/d;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 1
+
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-static {v0}, LEb/z;->W(LEb/z;)LEb/r;
+
+    move-result-object v0
+
+    iget-object p0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$F;->m()I
+
+    move-result p0
+
+    invoke-interface {v0, p0}, LEb/r;->a(I)V
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 3
+
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {v0}, LEb/z;->m0()Lsp/repcount/views/NavigationEnabledEditText;
+
+    move-result-object v1
+
+    iget-object v2, p0, LEb/z$c;->b:LAb/d;
+
+    invoke-virtual {v2}, LAb/d;->p()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v0, v1, v2}, LEb/z;->a0(LEb/z;Landroid/widget/EditText;Ljava/lang/CharSequence;)V
+
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {v0}, LEb/z;->i0()Lsp/repcount/database/realm/model/a;
+
+    move-result-object v0
+
+    sget-object v1, Lsp/repcount/database/realm/model/a;->r:Lsp/repcount/database/realm/model/a;
+
+    if-ne v0, v1, :cond_0
+
+    iget-object p0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {p0}, LEb/z;->l0()Lsp/repcount/views/NavigationEnabledEditText;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {v0}, LEb/z;->i0()Lsp/repcount/database/realm/model/a;
+
+    move-result-object v0
+
+    sget-object v1, Lsp/repcount/database/realm/model/a;->c:Lsp/repcount/database/realm/model/a;
+
+    if-eq v0, v1, :cond_2
+
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {v0}, LEb/z;->i0()Lsp/repcount/database/realm/model/a;
+
+    move-result-object v0
+
+    sget-object v1, Lsp/repcount/database/realm/model/a;->d:Lsp/repcount/database/realm/model/a;
+
+    if-eq v0, v1, :cond_2
+
+    iget-object v0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {v0}, LEb/z;->i0()Lsp/repcount/database/realm/model/a;
+
+    move-result-object v0
+
+    sget-object v1, Lsp/repcount/database/realm/model/a;->e:Lsp/repcount/database/realm/model/a;
+
+    if-ne v0, v1, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    return-void
+
+    :cond_2
+    :goto_0
+    iget-object p0, p0, LEb/z$c;->a:LEb/z;
+
+    invoke-virtual {p0}, LEb/z;->k0()Lsp/repcount/views/NavigationEnabledEditText;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Landroid/view/View;->requestFocus()Z
+
+    return-void
+.end method

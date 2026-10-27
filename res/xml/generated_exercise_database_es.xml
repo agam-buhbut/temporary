@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Piernas</string>
+    <string comment="" name="routine__pull_routine">Tirar</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Todo el cuerpo</string>
+    <string comment="" name="routine__push_routine">Empujar</string>
+    <string comment="" name="exercise__chrunches">Abdominales</string>
+    <string comment="" name="exercise__leg_raises">Elevación de piernas</string>
+    <string comment="" name="exercise__triceps_extensions">Extensiones de tríceps</string>
+    <string comment="" name="exercise__pushdowns">Extensión de tríceps en polea alta</string>
+    <string comment="" name="exercise__close_grip_bench">Prensa de banco de agarre cerrado</string>
+    <string comment="" name="exercise__dips">Fondos en paralelas para tríceps</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Flexión de bíceps con barra</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Flexión de bíceps con mancuerna</string>
+    <string comment="" name="exercise__hammercurl">Flexión tipo martillo</string>
+    <string comment="" name="exercise__concentration_curl">Flexión de concentración</string>
+    <string comment="" name="exercise__leg_press">Prensa de piernas</string>
+    <string comment="" name="exercise__squat">Sentadilla con barra</string>
+    <string comment="" name="exercise__lunges">Desplante con barra</string>
+    <string comment="" name="exercise__front_squat">Sentadilla frontal</string>
+    <string comment="" name="exercise__calf_raises">Elevación de talones parado</string>
+    <string comment="" name="exercise__seated_calf_raises">Elevaciones de talones sentado</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Peso muerto con piernas rectas</string>
+    <string comment="" name="exercise__leg_curls">Flexiones de piernas acostado</string>
+    <string comment="" name="exercise__leg_extensions">Extensiones de piernas</string>
+    <string comment="" name="exercise__deadlift">Peso muerto</string>
+    <string comment="" name="exercise__chin_up">Dominada supina</string>
+    <string comment="" name="exercise__pull_up">Dominada prona</string>
+    <string comment="" name="exercise__cable_row">Remo con cable</string>
+    <string comment="" name="exercise__dumbbell_row">Remo con mancuerna</string>
+    <string comment="" name="exercise__barbell_row">Remo con barra de pesas</string>
+    <string comment="" name="exercise__pulldowns">Jalones al pecho en polea alta</string>
+    <string comment="" name="exercise__hyperextensions">Hiperextensiones</string>
+    <string comment="" name="exercise__bench_press">Banco de pesas</string>
+    <string comment="" name="exercise__incline_bench_press">Banco de pesas inclinado</string>
+    <string comment="" name="exercise__dumbbell_press">Banco para mancuernas</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Banco inclinado para mancuernas</string>
+    <string comment="" name="exercise__dumbbell_flies">Extensiones pectorales con mancuernas</string>
+    <string comment="" name="exercise__cable_crossovers">Cruces en polea alta</string>
+    <string comment="" name="exercise__military_press">Prensa militar</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Elevaciones laterales con mancuernas</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Prensa de hombros con mancuernas sentado</string>
+    <string comment="" name="exercise__upright_rows">Remo con barra de pesas en vertical</string>
+    <string comment="" name="exercise__treadmill">Cinta de correr</string>
+    <string comment="" name="exercise__eliptical_trainer">Máquina elíptica</string>
+    <string comment="" name="exercise__rowing_machine">Máquina de remo</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Correr</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Caminar</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Ciclismo</string>
+    <string comment="" name="exercise__stationary_bike">Bicicleta fija</string>
+    <string comment="" name="exercise__stair_climber">Escalador</string>
+    <string comment="" name="exercise__jump_rope">Cuerda de saltar</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Patines en línea</string>
+    <string comment="" name="exercise__assisted_chinup">Dominadas supinas asistidas</string>
+    <string comment="" name="exercise__assisted_pullup">Dominadas pronas asistidas</string>
+    <string comment="" name="exercise__assisted_dips">Fondos en paralelas para tríceps asistidos</string>
+    <string comment="" name="exercise__bw_squat">Sentadilla sin peso</string>
+    <string comment="" name="exercise__push_ups">Lagartijas</string>
+    <string comment="" name="exercise__wall_sits">Sentadillas contra la pared</string>
+    <string comment="" name="exercise__front_plank">Plancha frontal</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Estiramientos</string>
+    <string comment="" name="exercise__hip_trusters">Empuje de cadera</string>
+</resources>

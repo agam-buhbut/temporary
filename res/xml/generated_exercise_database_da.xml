@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Ben</string>
+    <string comment="" name="routine__pull_routine">Træk</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Hele kroppen</string>
+    <string comment="" name="routine__push_routine">Pres</string>
+    <string comment="" name="exercise__chrunches">Mavebøjninger</string>
+    <string comment="" name="exercise__leg_raises">Benløft</string>
+    <string comment="" name="exercise__triceps_extensions">Tricepsstræk</string>
+    <string comment="" name="exercise__pushdowns">Tricepspres</string>
+    <string comment="" name="exercise__close_grip_bench">Bænkpres med smalt greb</string>
+    <string comment="" name="exercise__dips">Dips</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Bicepsløft med vægtstang</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Bicepsløft med håndvægt</string>
+    <string comment="" name="exercise__hammercurl">Hammer-curl</string>
+    <string comment="" name="exercise__concentration_curl">Koncentrationscurl</string>
+    <string comment="" name="exercise__leg_press">Benpres</string>
+    <string comment="" name="exercise__squat">Squat</string>
+    <string comment="" name="exercise__lunges">Lunges</string>
+    <string comment="" name="exercise__front_squat">Front-squat</string>
+    <string comment="" name="exercise__calf_raises">Lægøvelser</string>
+    <string comment="" name="exercise__seated_calf_raises">Siddende lægløft</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Dødløft med strakte ben</string>
+    <string comment="" name="exercise__leg_curls">Lårcurl</string>
+    <string comment="" name="exercise__leg_extensions">Benstræk</string>
+    <string comment="" name="exercise__deadlift">Dødløft</string>
+    <string comment="" name="exercise__chin_up">Chin-up</string>
+    <string comment="" name="exercise__pull_up">Kropshævning</string>
+    <string comment="" name="exercise__cable_row">Kabelroning</string>
+    <string comment="" name="exercise__dumbbell_row">Roning med håndvægt</string>
+    <string comment="" name="exercise__barbell_row">Roning med vægtstang</string>
+    <string comment="" name="exercise__pulldowns">Nedtræk</string>
+    <string comment="" name="exercise__hyperextensions">Rygstræk</string>
+    <string comment="" name="exercise__bench_press">Bænkpres</string>
+    <string comment="" name="exercise__incline_bench_press">Skrå bænkpres</string>
+    <string comment="" name="exercise__dumbbell_press">Bænkpres med håndvægt</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Skrå håndvægtpres</string>
+    <string comment="" name="exercise__dumbbell_flies">Håndvægtscrossover</string>
+    <string comment="" name="exercise__cable_crossovers">Kabeltræk over kors</string>
+    <string comment="" name="exercise__military_press">Militærpres</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Sidehævninger med håndvægt</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Skulderpres med håndvægte</string>
+    <string comment="" name="exercise__upright_rows">Opretstående roning</string>
+    <string comment="" name="exercise__treadmill">Løbebånd</string>
+    <string comment="" name="exercise__eliptical_trainer">Eliptisk træner</string>
+    <string comment="" name="exercise__rowing_machine">Romaskine</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Løb</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Gåture</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Cykling</string>
+    <string comment="" name="exercise__stationary_bike">Motionscykel</string>
+    <string comment="" name="exercise__stair_climber">Trappemaskine</string>
+    <string comment="" name="exercise__jump_rope">Sjipning</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Inline-skøjter</string>
+    <string comment="" name="exercise__assisted_chinup">Assisterede chin-ups</string>
+    <string comment="" name="exercise__assisted_pullup">Assisterede kropshævninger</string>
+    <string comment="" name="exercise__assisted_dips">Assisterede dips</string>
+    <string comment="" name="exercise__bw_squat">Kropsvægtssquat</string>
+    <string comment="" name="exercise__push_ups">Armbøjninger</string>
+    <string comment="" name="exercise__wall_sits">Vægsidning</string>
+    <string comment="" name="exercise__front_plank">Planke</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Strækøvelser</string>
+    <string comment="" name="exercise__hip_trusters">Hoftepres</string>
+</resources>

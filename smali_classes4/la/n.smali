@@ -1,0 +1,48 @@
+.class public final synthetic Lla/n;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Lka/a;
+
+.field public final synthetic b:Lsp/repcount/database/realm/model/a;
+
+.field public final synthetic c:Li0/Y0;
+
+
+# direct methods
+.method public synthetic constructor <init>(Lka/a;Lsp/repcount/database/realm/model/a;Li0/Y0;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lla/n;->a:Lka/a;
+
+    iput-object p2, p0, Lla/n;->b:Lsp/repcount/database/realm/model/a;
+
+    iput-object p3, p0, Lla/n;->c:Li0/Y0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 2
+
+    iget-object v0, p0, Lla/n;->a:Lka/a;
+
+    iget-object v1, p0, Lla/n;->b:Lsp/repcount/database/realm/model/a;
+
+    iget-object p0, p0, Lla/n;->c:Li0/Y0;
+
+    invoke-static {v0, v1, p0}, Lla/e$d$a$a;->a(Lka/a;Lsp/repcount/database/realm/model/a;Li0/Y0;)Lkotlin/Unit;
+
+    move-result-object p0
+
+    return-object p0
+.end method

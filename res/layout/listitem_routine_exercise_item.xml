@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.Material3.BodySmall" android:textColor="?colorOnSurfaceVariant" android:id="@id/exercise" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.Material3.BodySmall" android:textColor="?colorOnSurfaceVariant" android:id="@id/notes" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>

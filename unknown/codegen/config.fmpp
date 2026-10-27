@@ -1,0 +1,32 @@
+data: {
+    HyperLogLogImplementations: [
+        {
+            className: HyperLogLog
+        },
+        {
+            className: HyperLogLogPlus
+        }
+    ],
+
+    inputs: {
+        micro: {
+            cardinality: [
+                { size:         0 },
+                { size:    10_000 },
+                { size: 1_000_000 },
+            ],
+
+            merge: [
+                {
+                    size1: 10_000,
+                    size2: 10_000,
+                },
+            ],
+        }
+    }
+}
+
+modes: [
+    execute("**/*.java")
+    ignore("*.ftl")
+]

@@ -1,0 +1,40 @@
+.class interface abstract Landroidx/core/view/insets/b$a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/core/view/insets/b$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x608
+    name = "a"
+.end annotation
+
+
+# virtual methods
+.method public abstract a(I)V
+.end method
+
+.method public abstract b(Z)V
+.end method
+
+.method public abstract c(F)V
+.end method
+
+.method public abstract d(LR1/b;)V
+.end method
+
+.method public abstract e(I)V
+.end method
+
+.method public abstract f(F)V
+.end method
+
+.method public abstract g(F)V
+.end method
+
+.method public abstract h(Landroid/graphics/drawable/Drawable;)V
+.end method

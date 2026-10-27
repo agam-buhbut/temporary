@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/main_drawer__current_setting" android:checkableBehavior="none">
+        <item android:id="@id/main_activity__menu_item_exercises" android:title="@string/exercise__edit_exercises" />
+        <item android:id="@id/main_activity__menu_item_categories" android:title="@string/category__edit_categories" />
+    </group>
+    <group android:id="@id/premium" android:checkableBehavior="none">
+        <item android:icon="@drawable/ic_icons8_lock" android:id="@id/main_activity_unlock_premium" android:title="@string/store__title" android:iconTint="@color/purchase_yellow" />
+    </group>
+    <group android:id="@id/main_drawer__current_social" android:checkableBehavior="none">
+        <item android:id="@id/main_activity_menu__follow" android:title="@string/more__follow" />
+    </group>
+    <group android:id="@id/main_drawer__settings" android:checkableBehavior="none">
+        <item android:id="@id/main_activity__menut_item_account" android:title="@string/account__title" />
+        <item android:id="@id/main_activity__menu_item_sign_up" android:title="@string/account_intro__title" />
+    </group>
+    <group android:id="@id/main_drawer__current_other" android:checkableBehavior="none">
+        <item android:id="@id/main_activity__menu_item_feedback" android:title="@string/more__send_feedback" />
+        <item android:id="@id/main_activity__menu_item_help_and_support" android:title="@string/common__help_and_support" />
+    </group>
+    <group android:id="@id/dummy_items">
+        <item android:title="" />
+    </group>
+</menu>

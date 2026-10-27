@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Gambe</string>
+    <string comment="" name="routine__pull_routine">Tirata</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Full Body</string>
+    <string comment="" name="routine__push_routine">Spinta</string>
+    <string comment="" name="exercise__chrunches">Crunch</string>
+    <string comment="" name="exercise__leg_raises">Leg raise</string>
+    <string comment="" name="exercise__triceps_extensions">French press con bilanciere</string>
+    <string comment="" name="exercise__pushdowns">Pushdown tricipiti</string>
+    <string comment="" name="exercise__close_grip_bench">Panca piana a presa stretta</string>
+    <string comment="" name="exercise__dips">Dip</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Curl bicipiti con bilanciere</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Curl bicipiti con manubri</string>
+    <string comment="" name="exercise__hammercurl">Curl bicipiti a martello</string>
+    <string comment="" name="exercise__concentration_curl">Curl bicipiti concentrato</string>
+    <string comment="" name="exercise__leg_press">Leg press 45°</string>
+    <string comment="" name="exercise__squat">Squat</string>
+    <string comment="" name="exercise__lunges">Affondi</string>
+    <string comment="" name="exercise__front_squat">Front squat</string>
+    <string comment="" name="exercise__calf_raises">Calf raise</string>
+    <string comment="" name="exercise__seated_calf_raises">Calf raise seduto</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Stacchi a gambe tese</string>
+    <string comment="" name="exercise__leg_curls">Leg curl prono</string>
+    <string comment="" name="exercise__leg_extensions">Leg extension</string>
+    <string comment="" name="exercise__deadlift">Stacchi da terra</string>
+    <string comment="" name="exercise__chin_up">Trazioni presa supina</string>
+    <string comment="" name="exercise__pull_up">Trazioni presa prona</string>
+    <string comment="" name="exercise__cable_row">Pulley</string>
+    <string comment="" name="exercise__dumbbell_row">Rematore con manubrio</string>
+    <string comment="" name="exercise__barbell_row">Rematore con bilanciere</string>
+    <string comment="" name="exercise__pulldowns">Lat pulldown</string>
+    <string comment="" name="exercise__hyperextensions">Iperestensioni</string>
+    <string comment="" name="exercise__bench_press">Panca piana con bilanciere</string>
+    <string comment="" name="exercise__incline_bench_press">Panca inclinata con bilanciere</string>
+    <string comment="" name="exercise__dumbbell_press">Panca piana con manubri</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Panca inclinata con manubri</string>
+    <string comment="" name="exercise__dumbbell_flies">Croci con manubri</string>
+    <string comment="" name="exercise__cable_crossovers">Croci ai cavi</string>
+    <string comment="" name="exercise__military_press">Military press</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Alzate laterali</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Spinte sopra la testa con manubri</string>
+    <string comment="" name="exercise__upright_rows">Tirate al mento</string>
+    <string comment="" name="exercise__treadmill">Tapis roulant</string>
+    <string comment="" name="exercise__eliptical_trainer">Ellittica</string>
+    <string comment="" name="exercise__rowing_machine">Vogatore</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Corsa</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Camminata</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Ciclismo</string>
+    <string comment="" name="exercise__stationary_bike">Cyclette</string>
+    <string comment="" name="exercise__stair_climber">Stair master</string>
+    <string comment="" name="exercise__jump_rope">Salti con la corda</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Pattini a rotelle</string>
+    <string comment="" name="exercise__assisted_chinup">Trazioni assistite presa supina</string>
+    <string comment="" name="exercise__assisted_pullup">Trazioni assistite presa prona</string>
+    <string comment="" name="exercise__assisted_dips">Dip assistiti</string>
+    <string comment="" name="exercise__bw_squat">Squat a corpo libero</string>
+    <string comment="" name="exercise__push_ups">Piegamenti sulle braccia</string>
+    <string comment="" name="exercise__wall_sits">Wall sit</string>
+    <string comment="" name="exercise__front_plank">Plank</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Stretching</string>
+    <string comment="" name="exercise__hip_trusters">Hip thrust</string>
+</resources>

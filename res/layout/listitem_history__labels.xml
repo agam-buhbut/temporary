@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/value1"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/setLabel" android:layout_width="56.0dip" android:layout_height="wrap_content" android:text="@string/common__set" android:layout_marginStart="16.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/label1" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/common__minutes_short" android:capitalize="sentences" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/label2" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/common__seconds_short" android:capitalize="sentences" android:layout_marginStart="0.0dip" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/label3" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/common__distance" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/label4" android:layout_width="48.0dip" android:layout_height="wrap_content" android:text="@string/common__kcal" />
+        <TextView android:textAppearance="@style/TextAppearance.Material3.LabelSmall" android:id="@id/notesTitle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/common__notes" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

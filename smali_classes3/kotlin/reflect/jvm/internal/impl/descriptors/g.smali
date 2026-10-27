@@ -1,0 +1,36 @@
+.class Lkotlin/reflect/jvm/internal/impl/descriptors/g;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field private final a:Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;
+
+
+# direct methods
+.method public constructor <init>(Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lkotlin/reflect/jvm/internal/impl/descriptors/g;->a:Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public invoke()Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Lkotlin/reflect/jvm/internal/impl/descriptors/g;->a:Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;
+
+    invoke-static {p0}, Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;->a(Lkotlin/reflect/jvm/internal/impl/descriptors/ScopesHolderForClass;)Lkotlin/reflect/jvm/internal/impl/resolve/scopes/MemberScope;
+
+    move-result-object p0
+
+    return-object p0
+.end method

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/list_item_edge_padding" android:paddingEnd="@dimen/list_item_edge_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="8.0dip" layout="@layout/listitem__divider" />
+    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1" android:textColor="?android:textColorSecondary" android:id="@id/subTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

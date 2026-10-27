@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.listitem.ListItemLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.listitem.ListItemCardView android:id="@id/list_item_card" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?listItemCardViewSegmentedStyle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/num_sets_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/routine__num_sets" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" app:boxStrokeColor="?colorOutlineVariant" style="@style/AppTheme.WorkoutDataTextInputLayout">
+                <sp.repcount.views.SafeTextInputEditText android:id="@id/num_sets_text" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="3" android:inputType="number" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/num_warmup_sets_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:hint="@string/routine__num_warmup_sets" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" app:boxStrokeColor="?colorOutlineVariant" style="@style/AppTheme.WorkoutDataTextInputLayout">
+                <sp.repcount.views.SafeTextInputEditText android:id="@id/num_warmup_sets_text" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="3" android:inputType="number" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:id="@id/notes_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/common__notes" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" app:boxStrokeColor="?colorOutlineVariant" style="@style/AppTheme.WorkoutDataTextInputLayout">
+                <sp.repcount.views.SafeTextInputEditText android:id="@id/notes_text" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textMultiLine" android:imeOptions="actionDone" android:paddingStart="0.0dip" android:paddingEnd="0.0dip" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </com.google.android.material.listitem.ListItemCardView>
+</com.google.android.material.listitem.ListItemLayout>

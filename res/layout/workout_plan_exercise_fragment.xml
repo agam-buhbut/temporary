@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="@style/AppTheme.MaterialExposedDropDownLayout">
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView android:id="@id/target_type" android:focusable="false" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cursorVisible="false" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:orientation="vertical" android:id="@id/numSetsPlaceholder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" android:paddingStart="0.0dip" android:layout_marginEnd="4.0dip" style="@style/AppTheme.MaterialTextInputLayout">
+                    <sp.repcount.views.SafeTextInputEditText android:id="@id/numsets" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="3" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout android:orientation="vertical" android:id="@id/numWarmUpSetsPlaceholder" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" android:paddingStart="0.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="6.0dip" style="@style/AppTheme.MaterialTextInputLayout">
+                    <sp.repcount.views.SafeTextInputEditText android:id="@id/num_warmup_sets" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="3" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sets" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <include android:id="@id/set1" layout="@layout/listitem_percentage_input" />
+                <include android:id="@id/set2" layout="@layout/listitem_percentage_input" />
+                <include android:id="@id/set3" layout="@layout/listitem_percentage_input" />
+                <include android:id="@id/set4" layout="@layout/listitem_percentage_input" />
+                <include android:id="@id/set5" layout="@layout/listitem_percentage_input" />
+                <include android:id="@id/set6" layout="@layout/listitem_percentage_input" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

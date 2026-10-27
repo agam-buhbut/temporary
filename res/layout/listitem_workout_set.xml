@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="@dimen/workout_exercise_elevation"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.compose.ui.platform.ComposeView android:id="@id/digit_compose_view" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/weight_container" android:layout_width="72.0dip" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <TextView android:id="@id/edit_weight_label" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:ellipsize="end" android:id="@id/edit_weight" android:nextFocusDown="@id/edit_reps" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="8" android:digits="0123456789,." android:inputType="numberDecimal" android:imeOptions="actionNext|flagNoExtractUi" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/reps_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8.0dip">
+        <TextView android:id="@id/edit_reps_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__reps" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_reps" android:nextFocusDown="@id/edit_reps" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="8" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/time_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="72.0dip" android:layout_marginEnd="8.0dip">
+        <TextView android:ellipsize="end" android:id="@id/time_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__seconds" android:maxLines="1" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:id="@id/edit_time" android:nextFocusDown="@id/edit_reps" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="8" android:inputType="number" android:imeOptions="actionNext|flagNoExtractUi" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/common__notes" android:layout_weight="0.5">
+        <TextView android:ellipsize="end" android:id="@id/notes_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/common__notes" android:maxLines="1" style="@style/AppTheme.WorkoutDataTextInputLabel" />
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/AppTheme.WorkoutDataTextInputLayout">
+            <sp.repcount.views.NavigationEnabledEditText android:textAppearance="@style/TextAppearance.MaterialComponents.Caption" android:id="@id/edit_notes" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:imeOptions="actionDone" android:textIsSelectable="true" style="@style/AppTheme.TightEditText" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <ImageButton android:id="@id/more_button" android:contentDescription="@string/more__title" style="@style/AppTheme.WorkoutSetMoreButton" />
+</LinearLayout>

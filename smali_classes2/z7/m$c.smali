@@ -1,0 +1,44 @@
+.class abstract Lz7/m$c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lz7/m;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1a
+    name = "c"
+.end annotation
+
+
+# static fields
+.field static final a:Lcom/google/protobuf/N;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    sget-object v0, Lcom/google/protobuf/B0$b;->v:Lcom/google/protobuf/B0$b;
+
+    sget-object v1, Lcom/google/protobuf/B0$b;->e:Lcom/google/protobuf/B0$b;
+
+    const-wide/16 v2, 0x0
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
+
+    const-string v3, ""
+
+    invoke-static {v0, v3, v1, v2}, Lcom/google/protobuf/N;->d(Lcom/google/protobuf/B0$b;Ljava/lang/Object;Lcom/google/protobuf/B0$b;Ljava/lang/Object;)Lcom/google/protobuf/N;
+
+    move-result-object v0
+
+    sput-object v0, Lz7/m$c;->a:Lcom/google/protobuf/N;
+
+    return-void
+.end method

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Legs</string>
+    <string comment="" name="routine__pull_routine">Pull</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Volledig lichaam</string>
+    <string comment="" name="routine__push_routine">Push</string>
+    <string comment="" name="exercise__chrunches">Crunches</string>
+    <string comment="" name="exercise__leg_raises">Beenheffingen</string>
+    <string comment="" name="exercise__triceps_extensions">Triceps extensies</string>
+    <string comment="" name="exercise__pushdowns">Pushdowns</string>
+    <string comment="" name="exercise__close_grip_bench">Smalbankdrukken</string>
+    <string comment="" name="exercise__dips">Dips</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Barbell bicep curl</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Dumbbell bicep curl</string>
+    <string comment="" name="exercise__hammercurl">Hammer curl</string>
+    <string comment="" name="exercise__concentration_curl">Concentratie curl</string>
+    <string comment="" name="exercise__leg_press">Leg press</string>
+    <string comment="" name="exercise__squat">Squat</string>
+    <string comment="" name="exercise__lunges">Lunges</string>
+    <string comment="" name="exercise__front_squat">Front squat</string>
+    <string comment="" name="exercise__calf_raises">Kuitheffingen</string>
+    <string comment="" name="exercise__seated_calf_raises">Zittende kuitheffingen</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Gestrekte been deadlifts</string>
+    <string comment="" name="exercise__leg_curls">Leg curls</string>
+    <string comment="" name="exercise__leg_extensions">Leg extensions</string>
+    <string comment="" name="exercise__deadlift">Deadlift</string>
+    <string comment="" name="exercise__chin_up">Chin-up</string>
+    <string comment="" name="exercise__pull_up">Pull-up</string>
+    <string comment="" name="exercise__cable_row">Kabelroeien</string>
+    <string comment="" name="exercise__dumbbell_row">Dumbbellroeien</string>
+    <string comment="" name="exercise__barbell_row">Barbellroeien</string>
+    <string comment="" name="exercise__pulldowns">Pulldowns</string>
+    <string comment="" name="exercise__hyperextensions">Hyperextensies</string>
+    <string comment="" name="exercise__bench_press">Bankdrukken</string>
+    <string comment="" name="exercise__incline_bench_press">Schuine bankdrukken</string>
+    <string comment="" name="exercise__dumbbell_press">Dumbbell press</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Schuine dumbbell press</string>
+    <string comment="" name="exercise__dumbbell_flies">Dumbbell flyes</string>
+    <string comment="" name="exercise__cable_crossovers">Cable crossovers</string>
+    <string comment="" name="exercise__military_press">Military press</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Dumbbell lateral raises</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Shoulder dumbbell press</string>
+    <string comment="" name="exercise__upright_rows">Rechtop roeien</string>
+    <string comment="" name="exercise__treadmill">Loopband</string>
+    <string comment="" name="exercise__eliptical_trainer">Crosstrainer</string>
+    <string comment="" name="exercise__rowing_machine">Roeimachine</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Lopen</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Wandelen</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Fietsen</string>
+    <string comment="" name="exercise__stationary_bike">Hometrainer</string>
+    <string comment="" name="exercise__stair_climber">Stepmachine</string>
+    <string comment="" name="exercise__jump_rope">Touwtjespringen</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Inline skates</string>
+    <string comment="" name="exercise__assisted_chinup">Geassisteerde chin-ups</string>
+    <string comment="" name="exercise__assisted_pullup">Geassisteerde pull-ups</string>
+    <string comment="" name="exercise__assisted_dips">Geassisteerde dips</string>
+    <string comment="" name="exercise__bw_squat">Lichaamsgewicht squat</string>
+    <string comment="" name="exercise__push_ups">Push-ups</string>
+    <string comment="" name="exercise__wall_sits">Wall sits</string>
+    <string comment="" name="exercise__front_plank">Plank</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Stretching</string>
+    <string comment="" name="exercise__hip_trusters">Hip thrust</string>
+</resources>

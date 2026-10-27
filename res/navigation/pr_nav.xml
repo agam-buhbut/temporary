@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/pr_nav" app:startDestination="@id/personalRecordsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/personal_records__title" android:name="sp.repcount.activities.personalrecords.PersonalRecordsFragment" android:id="@id/personalRecordsFragment">
+        <argument android:name="exerciseId" app:argType="string" />
+        <argument android:name="sourceWorkout" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_personalRecordsFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+        <action android:id="@id/action_personalRecordsFragment_to_recordHistory" app:destination="@id/personalRecordHistoryFragment">
+            <argument android:name="prType" app:argType="sp.repcount.activities.personalrecords.PersonalRecordType" />
+        </action>
+    </fragment>
+    <fragment android:label="@string/personal_records__title" android:name="sp.repcount.activities.personalrecords.history.PersonalRecordsHistoryFragment" android:id="@id/personalRecordHistoryFragment">
+        <argument android:name="prType" app:argType="sp.repcount.activities.personalrecords.PersonalRecordType" />
+        <argument android:name="exerciseId" app:argType="string" />
+        <action android:id="@id/action_personalRecordsHistoryFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+</navigation>

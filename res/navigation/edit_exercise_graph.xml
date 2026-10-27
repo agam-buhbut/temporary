@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/edit_exercise_graph" app:startDestination="@id/addOrEditExercisesNormalFragment2"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/exercise__merge" android:name="sp.repcount.activities.editexercise.merge.MergeExercisesFragment" android:id="@id/mergeExercisesFragment2">
+        <argument android:name="exerciseId" app:argType="string" />
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.editexercise.AddOrEditExercisesNormalFragment" android:id="@id/addOrEditExercisesNormalFragment2">
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+        <argument android:name="exerciseName" app:argType="string" app:nullable="true" />
+        <argument android:name="categoryIdentity" app:argType="string" app:nullable="true" />
+        <argument android:name="exerciseIdentity" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_addOrEditExercisesNormalFragment2_to_mergeExercisesFragment2" app:destination="@id/mergeExercisesFragment2" />
+    </fragment>
+</navigation>

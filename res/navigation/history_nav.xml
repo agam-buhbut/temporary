@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/history_nav" app:startDestination="@id/allSetsFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="sp.repcount.activities.statistics.AllSetsFragment" android:id="@id/allSetsFragment">
+        <argument android:name="exerciseId" app:argType="string" />
+        <argument android:name="sourceWorkout" app:argType="string" app:nullable="true" />
+        <action android:id="@id/action_allSetsFragment_to_workout_nav_graph" app:destination="@id/workout_nav_graph">
+            <argument android:name="workoutid" app:argType="string" />
+            <argument android:name="iscurrentworkout" android:defaultValue="false" app:argType="boolean" />
+        </action>
+    </fragment>
+</navigation>

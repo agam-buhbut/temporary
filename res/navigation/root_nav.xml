@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/root_nav_graph" app:startDestination="@id/main_activity__bottom_item_workout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/common__routines" android:name="sp.repcount.activities.main.RoutineListFragment" android:id="@id/main_activity__bottom_item_routine" />
+    <fragment android:label="@string/statistics__title" android:name="sp.repcount.activities.statistics.StatisticsRootFragment" android:id="@id/main_activity__bottom_item_stats">
+        <action android:id="@id/action_root_statistics_to_category_statistics" app:destination="@id/category_statistics" />
+        <action android:id="@id/action_main_activity__bottom_item_stats_to_fileExportFragment" app:destination="@id/fileExportFragment" />
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.statistics.exercisestatistics.ExerciseStatisticsFragment" android:id="@id/exercise_statistiscs">
+        <argument android:name="exerciseIdentity" app:argType="string" />
+        <argument android:name="title" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.statistics.StatisticsSelectExerciseFragment" android:id="@id/category_statistics">
+        <action android:id="@id/action_category_statistics_to_exercise_statistics" app:destination="@id/exercise_statistiscs" />
+        <argument android:name="CategoryParam" app:argType="string" />
+        <argument android:name="title" app:argType="string" />
+    </fragment>
+    <fragment android:label="@string/workout_list__title" android:name="sp.repcount.activities.main.workoutlist.realm.RealmWorkoutListFragment" android:id="@id/main_activity__bottom_item_workout" />
+    <fragment android:label="@string/category__edit_categories" android:name="sp.repcount.activities.editcategories.realm.RealmEditCategoriesFragment" android:id="@id/editCategoriesActivityFragment">
+        <action android:id="@id/action_editCategoriesActivityFragment_to_addOrEditCategoryFragment" app:destination="@id/addOrEditCategoryFragment" />
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.editcategories.realm.AddOrEditCategoryFragment" android:id="@id/addOrEditCategoryFragment" />
+    <fragment android:label="@string/exercise__edit_exercises" android:name="sp.repcount.activities.editexercise.EditExercisesFragment" android:id="@id/editExercisesFragment">
+        <argument android:name="exerciseId" app:argType="string" app:nullable="true" />
+    </fragment>
+    <fragment android:label=" " android:name="sp.repcount.activities.realm.backup.FileExportFragment" android:id="@id/fileExportFragment" />
+    <action android:id="@id/action_global_editCategoriesActivityFragment2" app:destination="@id/editCategoriesActivityFragment" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+    <action android:id="@id/action_global_editExercisesFragment" app:destination="@id/editExercisesFragment" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+    <action android:id="@id/action_global_exerciseStatistics" app:destination="@id/exercise_statistiscs" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+    <action android:id="@id/action_global_categoryStatistics" app:destination="@id/category_statistics" app:enterAnim="@anim/cross_enter" app:exitAnim="@anim/cross_leave" app:popEnterAnim="@anim/cross_enter" app:popExitAnim="@anim/cross_leave" />
+</navigation>

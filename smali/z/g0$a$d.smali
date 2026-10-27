@@ -1,0 +1,88 @@
+.class public final Lz/g0$a$d;
+.super Lz/g0$a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lz/g0$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "d"
+.end annotation
+
+
+# instance fields
+.field private a:J
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method private constructor <init>(J)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, v0}, Lz/g0$a;-><init>(Lkotlin/jvm/internal/k;)V
+
+    iput-wide p1, p0, Lz/g0$a$d;->a:J
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(JILkotlin/jvm/internal/k;)V
+    .locals 0
+
+    and-int/lit8 p3, p3, 0x1
+
+    if-eqz p3, :cond_0
+
+    const-wide p1, 0x7fffffffffffffffL
+
+    .line 3
+    invoke-static {p1, p2}, LV0/z;->a(J)J
+
+    move-result-wide p1
+
+    :cond_0
+    const/4 p3, 0x0
+
+    invoke-direct {p0, p1, p2, p3}, Lz/g0$a$d;-><init>(JLkotlin/jvm/internal/k;)V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(JLkotlin/jvm/internal/k;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0, p1, p2}, Lz/g0$a$d;-><init>(J)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()J
+    .locals 2
+
+    iget-wide v0, p0, Lz/g0$a$d;->a:J
+
+    return-wide v0
+.end method
+
+.method public final b(J)V
+    .locals 0
+
+    iput-wide p1, p0, Lz/g0$a$d;->a:J
+
+    return-void
+.end method

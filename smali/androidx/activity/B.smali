@@ -1,0 +1,36 @@
+.class public final synthetic Landroidx/activity/B;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function0;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/activity/D;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/activity/D;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/activity/B;->a:Landroidx/activity/D;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke()Ljava/lang/Object;
+    .locals 0
+
+    iget-object p0, p0, Landroidx/activity/B;->a:Landroidx/activity/D;
+
+    invoke-static {p0}, Landroidx/activity/D;->f(Landroidx/activity/D;)Landroidx/activity/U;
+
+    move-result-object p0
+
+    return-object p0
+.end method

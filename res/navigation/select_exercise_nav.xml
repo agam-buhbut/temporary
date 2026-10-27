@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/select_exercise_nav" app:startDestination="@id/exerciseCategorySelectFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/exercise_select_category__title" android:name="sp.repcount.activities.exerciseselect.categories.ExerciseCategorySelectFragment" android:id="@id/exerciseCategorySelectFragment">
+        <action android:id="@id/action_exerciseCategorySelectFragment_to_exerciseSelectFragment" app:destination="@id/exerciseSelectFragment">
+            <argument android:name="category" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+            <argument android:name="title" android:defaultValue="@null" app:argType="string" app:nullable="true" />
+        </action>
+        <action android:id="@id/action_exerciseCategorySelectFragment_to_searchResultFragment" app:destination="@id/searchResultFragment" />
+    </fragment>
+    <fragment android:label="{title}" android:name="sp.repcount.activities.exerciseselect.exercises.ExerciseSelectFragment" android:id="@id/exerciseSelectFragment">
+        <action android:id="@id/action_exerciseSelectFragment_to_searchResultFragment" app:destination="@id/searchResultFragment" />
+    </fragment>
+    <fragment android:label="SearchResultFragment" android:name="sp.repcount.activities.exerciseselect.search.SearchResultFragment" android:id="@id/searchResultFragment" />
+</navigation>

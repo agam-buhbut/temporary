@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/list_item_with_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/digits" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_marginEnd="34.0dip" layout="@layout/digit_layout" />
+    <TextView android:textAppearance="@style/TextAppearance.Material3.BodyLarge" android:textColor="?colorOnSurface" android:gravity="center_vertical" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_marginStart="72.0dip" android:layout_alignParentStart="true" />
+</RelativeLayout>

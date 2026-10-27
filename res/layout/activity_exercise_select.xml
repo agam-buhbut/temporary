@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="?colorSurface" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/appBarLayout" layout="@layout/appbar_layout_material" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <FrameLayout android:id="@id/supersetBarParent" android:background="@color/app_main_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="8.0dip">
+            <RelativeLayout android:id="@id/supersetBar" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                <com.google.android.material.button.MaterialButton android:textColor="?colorOnPrimary" android:id="@id/supersetAddButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" style="@style/Widget.Material3.Button.TextButton" />
+                <RadioGroup android:orientation="horizontal" android:id="@id/selection_mode_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                    <androidx.appcompat.widget.AppCompatRadioButton android:textColor="?colorOnPrimary" android:id="@id/single_exercise_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/super_set_toolbar__add_single" android:layout_marginStart="8.0dip" app:buttonTint="?colorOnPrimary" />
+                    <androidx.appcompat.widget.AppCompatRadioButton android:textColor="?colorOnPrimary" android:id="@id/superset_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/super_set_toolbar__add_multiple" android:layout_marginStart="8.0dip" app:buttonTint="?colorOnPrimary" style="@style/Widget.AppCompat.CompoundButton.RadioButton" />
+                </RadioGroup>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@id/subNavigationContainer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/supersetBarParent" />
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

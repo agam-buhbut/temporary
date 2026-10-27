@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string comment="" name="routine__leg_routine">Jalat</string>
+    <string comment="" name="routine__pull_routine">Veto</string>
+    <string comment="routine__full_body_routine Routine name for a Full Body Workout" name="routine__full_body_routine">Koko vartalo</string>
+    <string comment="" name="routine__push_routine">Työntö</string>
+    <string comment="" name="exercise__chrunches">Vatsarutistukset</string>
+    <string comment="" name="exercise__leg_raises">Jalkojen nostot</string>
+    <string comment="" name="exercise__triceps_extensions">Ojentajapunnerrukset</string>
+    <string comment="" name="exercise__pushdowns">Ojentajapunnerrukset taljassa</string>
+    <string comment="" name="exercise__close_grip_bench">Penkkipunnerrus kapealla otteella</string>
+    <string comment="" name="exercise__dips">Dipit</string>
+    <string comment="" name="exercise__barbell_bicep_curl">Hauiskääntö tangolla</string>
+    <string comment="" name="exercise__dumbbell_bicep_curl">Hauiskääntö käsipainoilla</string>
+    <string comment="" name="exercise__hammercurl">Vasarakääntö</string>
+    <string comment="" name="exercise__concentration_curl">Keskitetty hauiskääntö</string>
+    <string comment="" name="exercise__leg_press">Jalkaprässi</string>
+    <string comment="" name="exercise__squat">Kyykky</string>
+    <string comment="" name="exercise__lunges">Askelkyykky</string>
+    <string comment="" name="exercise__front_squat">Etukyykky</string>
+    <string comment="" name="exercise__calf_raises">Pohjenousut</string>
+    <string comment="" name="exercise__seated_calf_raises">Istuen tehtävät pohjenousut</string>
+    <string comment="" name="exercise__straight_legged_deadlifts">Suorin jaloin maastaveto</string>
+    <string comment="" name="exercise__leg_curls">Reiden koukistus laitteessa</string>
+    <string comment="" name="exercise__leg_extensions">Reiden ojennus laitteessa</string>
+    <string comment="" name="exercise__deadlift">Maastaveto</string>
+    <string comment="" name="exercise__chin_up">Leuanveto vastaotteella</string>
+    <string comment="" name="exercise__pull_up">Leuanveto myötäotteella</string>
+    <string comment="" name="exercise__cable_row">Kaapelisoutu</string>
+    <string comment="" name="exercise__dumbbell_row">Käsipainosoutu</string>
+    <string comment="" name="exercise__barbell_row">Levytankosoutu</string>
+    <string comment="" name="exercise__pulldowns">Alavedot</string>
+    <string comment="" name="exercise__hyperextensions">Selän ojennukset</string>
+    <string comment="" name="exercise__bench_press">Penkkipunnerrus</string>
+    <string comment="" name="exercise__incline_bench_press">Vinopenkkipunnerrus</string>
+    <string comment="" name="exercise__dumbbell_press">Käsipainopunnerrus</string>
+    <string comment="" name="exercise__incline_dumbbell_press">Vinoprässi käsipainoilla</string>
+    <string comment="" name="exercise__dumbbell_flies">Vipunostot käsipainoilla</string>
+    <string comment="" name="exercise__cable_crossovers">Ristikkäistaljat</string>
+    <string comment="" name="exercise__military_press">Sotilaspunnerrus</string>
+    <string comment="" name="exercise__dumbbell_lateral_raises">Sivunostot käsipainoilla</string>
+    <string comment="" name="exercise__shoulder_dumbbell_press">Olkapään käsipainoprässi</string>
+    <string comment="" name="exercise__upright_rows">Pystysuora soutu</string>
+    <string comment="" name="exercise__treadmill">Juoksumatto</string>
+    <string comment="" name="exercise__eliptical_trainer">Crosstrainer</string>
+    <string comment="" name="exercise__rowing_machine">Soutulaite</string>
+    <string comment="exercise__running Outdoor running cardio exercise" name="exercise__running">Juoksu</string>
+    <string comment="exercise__walking Outdoor walking cardio exercise" name="exercise__walking">Kävely</string>
+    <string comment="exercise__cycling Out door cykling cardio exercise" name="exercise__cycling">Pyöräily</string>
+    <string comment="" name="exercise__stationary_bike">Kuntopyörä</string>
+    <string comment="" name="exercise__stair_climber">Porrasnousu</string>
+    <string comment="" name="exercise__jump_rope">Hyppynaru</string>
+    <string comment="exercise__inlines Outdoor inline skating cardio exercise" name="exercise__inlines">Rullaluistelu</string>
+    <string comment="" name="exercise__assisted_chinup">Avustetut leuanvedot vastaotteella</string>
+    <string comment="" name="exercise__assisted_pullup">Avustetut leuanvedot myötäotteella</string>
+    <string comment="" name="exercise__assisted_dips">Avustetut dipit</string>
+    <string comment="" name="exercise__bw_squat">Ilmakyykky</string>
+    <string comment="" name="exercise__push_ups">Punnerrukset</string>
+    <string comment="" name="exercise__wall_sits">Seinäkyykky</string>
+    <string comment="" name="exercise__front_plank">Etulankku</string>
+    <string comment="exercise__category_stretching Exercise category for stretching exercises." name="exercise__category_stretching">Venyttely</string>
+    <string comment="" name="exercise__hip_trusters">Lantion nosto</string>
+</resources>

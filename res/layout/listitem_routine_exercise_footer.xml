@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="32.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/button_reorder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:text="@string/workout__reorder" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/button_replace" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="16.0dip" android:text="@string/workout__replace" />
+    <com.google.android.material.button.MaterialButton android:textColor="@color/white" android:id="@id/button_delete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/common__delete" android:backgroundTint="@color/error_red" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="onboarding_sign_in_option_margin_bottom">24.0dip</dimen>
+    <dimen name="onboarding_title__margin_bottom">32.0dip</dimen>
+    <dimen name="onboarding_title__margin_top">72.0dip</dimen>
+    <dimen name="onboarding_title__text_size">42.0sp</dimen>
+</resources>
